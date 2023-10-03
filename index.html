@@ -1,0 +1,1741 @@
+<!--
+    Created by Ricson B. Escalicas
+    I'm sorry if you don't like the way I write up my code. I'd like to hear any remarks on my coding.
+    Further details are written at the very bottom of the document.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title id="title">www.ricsonescalicas.net</title>
+    
+    <meta name="description" content="Personal Blog of Ricson Escalicas" />
+    <meta charset="UTF-8"/>
+    <meta name="developer" content="Ricson B. Escalicas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="rIcon.png" type="image/x-icon" />
+</head>
+
+<body onload="change()">
+
+<div id="theMain">
+ <div class="navigation">
+ 
+     <!--This is for the menu. This would be changed if the website will be dynamic, if God willing. -->
+     <div id="upNav">
+       
+         <div id="navMenu" class="menuNav">
+            <!--
+                I'd like to put these things respectively as links linking to certain HTML documents, but for now it won't because it's just a static website. I'll just show and hide these things for now.
+            -->
+            <ul>
+                <li class="menuNavLists" id="aboutWeb" title="About the website">About</li>
+                <li id="closebtn" onclick="closeMenu()" title="Close Menu">x</li>
+                <li class="menuNavLists" id="visit" title="Visit to">Visit  </li>
+                <li class="menuNavLists" id="services" title="Get services">Services  </li>
+                <li class="menuNavLists" id="support" title="Give support">Support </li>
+                <li class="menuNavLists" id="help" title="Get help">Help</li>
+            </ul>  
+        </div><!--#navMenu--> 
+         
+         <p id="upNavMenu">
+                Menu:
+         </p>
+         
+         <div id="defaultMenu">
+                <br/>
+             <div id="defaultMenuShow">
+                  <br/>
+             <p id="menuSays">Menu Section</p>
+                <br/>
+             <p>This is the Menu Section of my website. If there's something that you'd like, look at the predefined choices on the up-right corner. Fortunately, the Services and Help section is completely free under some conditions. If you need my help and service(coding) that's free, prove that you're worthy to be helped by me. The Visit and Support sections, on the other hand, is if you would like to support me or there's something you'd like to visit from the developer.</p>
+                <br/>
+             <p style="color: #ff1d00">Conditions:</p>
+             <p><span class="important">☕</span> You need to be a hard-working person. If you're a damned lazy and rely on others greatly, then you can't have any of the things mentioned. I help those people who worked hard but can't easily get the topic. Not you who are lazy. I'm doing this for your own good. If you really want to learn, you'll work hard for it and won't be idle. In the industry, you'll likely be fired at a job because of being lazy and because you can't do the job well.</p>
+                <br/>
+             <p><span class="important">☕</span> You need to write your own code first before asking me on how to do some programming assignments, give ideas, or even I myself will create it for you(it depends upon the situation). The very thing you need to do is that, if bugs broke out or errors are apparent, I may help you only if you started your code first. I can probably sense that you're just writing code and not really trying to create a functional one. If so, it would mean that you're banned in getting free help and free services. I can't guarantee that I can help you if the assignment requires a specific language to be written which I don't currently have much acquaintance with.</p>
+                <br/>
+             <p><span class="important">☕</span> You need to chat my Facebook Page if you have something to talk of. I don't encourage you to chat me in private message. If you need to talk to me, then send a message on my Facebook Page which is available on the Contact Section. Otherwise I won't likely reply at your message sent on my account.</p>
+                <br/>
+             <p><span class="important">☕</span> You need to be grateful if you received one of the free things that I offer in this website. This is needed in my perspective. Ungrateful people aren't always welcome.</p>
+                <br/>
+             <p><span class="important">☕</span> This is optional. You need to like and follow on my Facebook Page. You don't need to give it a like and follow to get the free things that I offer. I do encourage you to do such, so I'll likely help you even more because you appreciate what I do for you aside from giving thanks in return.</p>
+                <br/>
+             <div id="congratulate">
+                <br/>
+             <p>If those four prerequisite conditions fits you, then I hereby qualify you to have the free stuffs that I offer here. Anyway, I may feel that you're fit or not so it would be accepted or canceled. </p>
+                <br/>
+                </div>
+            </div>
+                <br/>
+         </div>
+         
+         <div id="forShowHelp">
+         <br/>     
+         <div class="introductory">
+             <br/>
+         <p> I want to help others who are pursuing to be a good student just like me. If you need any kind of help that's related to the front-end web development. I may help but I can't guarantee that you'll be replied instantly. I'm really busy.</p>    
+             <br/>
+         </div>
+            <br/>
+         <div class="options">
+         <p class="optionSelect">Code</p>
+         <div class="showOptionS">
+         <p>If you'd like me to help you in coding, you may but it's not 100% guaranteed that I'll help at this matter. It depends upon the situation like I'm doing something important or whatsoever. I'd like to receive challenges in coding in order for me to improve more if I solve such. To do so, just go to the Contact Section of this website.</p>    
+         </div>
+             
+         <p class="optionSelect">Advices</p>
+         <div class="showOptionS">
+         <p>I can give advices depending upon the situation that you're dealing with. Furthermore, I can give an advice in studying just like I do. To do so, just go to the Contact Section of this website.</p>    
+         </div>
+             
+         <p class="optionSelect">Tips</p>
+         <div class="showOptionS">
+         <p>I can give tips like on how to do something like in coding, studying, etc. Although I might be considered as a novice at this time, I think I can give tips based on my experience. To do so, just go to the Contact Section of this website.</p>    
+                    </div>   
+                </div>      
+            <br/>
+         </div>
+         
+         <div id="forShowSupport">
+            <br/> 
+         <div class="introductory">
+             <br/>
+         <p> If you want to support the developer, you can do so. I really appreciate any means of support. Learn more by clicking the choices below.</p>    
+             <br/>
+         </div>
+             <br/>
+         <div class="options">
+         <p class="optionSelect">Developer</p>
+         <div class="showOptionS">
+         <p>If you'd like to support the developer, you can do so in any means. Just tell me on what you'd like to support me. </p>
+         </div>
+             
+         <p class="optionSelect">Facebook Page</p>
+         <div class="showOptionS">
+         <p>If you want to support my Facebook Page, you can do so. You just need to give it a "like" and follow it. To do so, just go to the Contact Section of this website. <a href="https://www.facebook.com/Hermano-Ricson-Escalicas-1109011380608647" target="_blank">Hermano Ricson Escalicas</a></p>
+         </div>     
+             
+         <p class="optionSelect">YouTube Channel</p>
+         <div class="showOptionS">
+         <p>If you want to support my YouTube channel, you can do so. Just subscribe and turn on the notification bell therein. I may upload some coding tutorials for beginners if I have many subscribers, if God willing. <a href="https://www.youtube.com" target="_blank">Ricson Escalicas</a></p>     
+                </div>     
+             </div>
+         </div>
+         
+         <div id="forShowServices">
+            <br/> 
+         <div  class="introductory">
+             <br/>
+         <p>I'd like to give free services especially in programming to improve myself by trying to solve other people's programming problems. If you want services from the developer, you may. The best thing is it's for free under some conditions but it's not  100% guaranteed that you can avail to this because I'm very busy. </p>    <br/>
+         </div>
+            <br/>
+         <div class="options">
+         <p class="optionSelect">Code</p>
+         <div class="showOptionS">
+         <p>I can provide some coding services for absolutely free but remember the conditions. Go to the Contact Section. </p>
+            </div>    
+         <p class="optionSelect">Web Creation</p>
+         <div class="showOptionS">
+         <p>I can give an exclusive web creation for you. It's free but I'm not talking about dynamic websites, nor a personal website blog and higher. I'm referring to simple tutorials on how to do something in a website. It's just basically a static one for you to learn.</p>
+         </div>
+             
+         <p class="optionSelect">Thesis</p>
+         <div class="showOptionS">
+         <p>This thing is very rare to be availed. You need to work for your thesis hardily but sometimes we know our mental limitations so an assistance is needed. </p>
+                </div>
+            </div>     
+         </div>
+         
+         <div id="forShowVisit">
+         <br/> 
+         <div  class="introductory">
+             <br/>
+         <p>If you want to visit something that's related to the developer, you may. There are predefined choices that you can visit into.</p>    <br/>
+         </div>
+             <br/>
+         <div class="options">
+         <p class="optionSelect">Facebook Page</p>
+         <div class="showOptionS">
+         <p>I suggest that you should visit my Facebook Page. I may be posting some tutorials if I have many "likes" and followers in the said page. <a href="https://www.facebook.com/Hermano-Ricson-Escalicas-1109011380608647" target="_blank">Hermano Ricson Escalicas</a> </p>     
+         </div>    
+             
+         <p class="optionSelect">SoloLearn Account</p>
+         <div class="showOptionS">
+         <p>If you have a SoloLearn account, better visit mine also and please follow it. I may upload some simple to complex projects there if God willing. </p>
+         </div>     
+             
+         <p class="optionSelect">YouTube Channel</p>
+         <div class="showOptionS">
+         <p>Better check out my YouTube channel. I'd like to upload some simple tutorials for beginners if God willing, if I have a 100 subscribers. <a href="https://www.youtube.com" target="_blank">Ricson Escalicas</a></p>
+                </div>      
+            </div>
+        </div>
+         
+         <div id="forAboutWeb">
+            <div id="abthw">
+             <p>About this Website:</p>
+            </div>
+             
+            <div class="aboutDiv">
+                <p class="aboutDivTtle">www.ricsonescalicas.net</p>
+                    <br/>
+                <p>This is the proposed name of the website if I upload it to the internet. Further changes may take place as long as this website isn't uploaded in the internet yet. I'm looking forward to receive your suggestions. To do so, send a message on my Facebook page.</p>
+            </div>
+                 
+            <div class="aboutDiv">
+                <p class="aboutDivTtle">Aim of the Project</p>
+                    <br/>
+                <p>This website is created to test my skills in creating a website. This isn't mandated by a teacher to create this, it's my own will. It seems very successful at its first phase. Studying isn't enough for me, I must test my skills to see what I got from my studying, so I decided to come up with a project to do so. To gain some experience, I created this one. It's not complex or magnificent, it's just a simple mere website, simple beginnings of skills' improvement. I'm looking forward to update this in the future, if God willing. For now, it will be just a static website because I can't make it a dynamic website due to some reasons and especially this crap COVID-19.</p>
+            </div>
+             
+            <div class="aboutDiv">
+                <p class="aboutDivTtle">Plans for Improvement</p>
+                    <br/>
+                <p>As you can see my dear visitor, it's just a static website. I want to develop this even more but due some reasons wherein:</p>
+                    <br/>
+                <p class="impAbout">1. My second-hand computer doesn't have an internet access.</p>
+                    <br/>
+                <p class="impAbout">2. This crap COVID-19 which prevents me going outside to gather the necessary things from internet cafes since my computer doesn't have an internet access. </p>
+                    <br/>
+                <p class="impAbout">3. Limited access to the internet in my phone(for load). My cousin does have a WiFi but he doesn't want to let me connect into it.</p>
+                    <br/>
+                <p class="impAbout">4. Limited cellphone usage(studying at my phone) due to its faulty charging mechanism. It takes the battery life abruptly as well. </p>
+                    <br/>
+                <p class="impAbout">5. Phone's limited software and hardware capabilities. It can't install some applications which is needed for my hectic studying and its memory can't cope up with the data I need in studying. My phone is very old KitKat 4.4.1 and it's 6 years old since it was made. I'm just a poor man to buy one. Luckily, my father expressed his willingness to buy me a new one, but unfortunately due to this crap pandemic,  he can't. </p> 
+                    <br/>
+                <p class="impAbout">6. Very noisy environment. My siblings create some damned noise which hinders me in focusing effectively. They're playing those damned musics, sound effects from Mobile Legends, and whatsoever damned noise they make is a complete hindrance! </p>
+                    <br/>
+                <p class="impAbout">7. There are other problems as well that I should come up with better solutions.</p>
+                    <br/>
+                <p>Thus, I can't currently pursue for further improvements.</p>
+                    <br/>
+                <p>What I'm planning: </p>
+                    <br/>
+                <p class="impAbout">1. To make an administrator's section. </p>
+                    <br/>
+                <p class="impAbout">2. To be able this website through the administrator section, update, delete and create the contents herein without dealing with the source code.</p>
+                    <br/>
+                <p class="impAbout">3. To create a database and connect it into this.</p>
+                    <br/>
+                <p class="impAbout">4. To be able this website to post some contents(like the ones at Facebook) in the About/General section.</p>
+                    <br/>
+                <p>I may add up some plans if God willing.</p>
+            </div>
+             
+            <div class="aboutDiv">
+                <p class="aboutDivTtle">Delayed Project</p>
+                    <br/>
+                <p class="impAbout">This project started on October 24, 2019. It's the early stage of development. But due to some factors, it's delayed for months.</p>
+                    <br/> 
+                <p>Since it started at late October 2019, it's under the 2nd semester of Grade 11. So therefore, there's a lot of projects to deal with from minor subjects with some literally deadly deadlines for my grades. I had two subjects for research, I needed to create a video, and so on. There are literally many projects which I needed to comply if I wanted to pass Grade 11. This fact hindered me to continue the project and to study about technology.</p>
+                     <br/>
+                <p>At December 6, 2019, my computer became faulty. I initially thought that it was just the CMOS since the monitor worked but the system unit didn't. So I replaced it with a new one but it didn't still worked. It perplexed me somehow thinking about what's the problem. Then I finally figured out that it was the power supply's fault!. It's replaced with a new one at March 2020.</p>
+                    <br/>
+                <p>It works! But due to an space issue(its former placement was blocked by a storage box), so I didn't set up the computer and it was just on the other side. On early May 2020, the box was removed and I finally set up computer into it. The computer is set up and I continued finishing this at early June. </p>
+            </div>
+             
+            <div class="aboutDiv">
+                <p class="aboutDivTtle">About the Developer</p>
+                    <br/>
+                <p>Hi there! I'm Ricson B. Escalicas. I love to create something out from scratch. I'm studying a lot and I love what I'm doing. If you study a lot as well, I want to know you and please come to inbox because I'd like to collaborate with the people who have the same habits and interests as I have. I can be your friend also regardless if we have some differences in our traits as long as you're good to deal with.  </p>
+            </div>
+                <br/>
+         </div>
+      
+     </div><!--#upNav-->
+     
+           <ul>
+            <!--
+                I'd like to separate these things as links linking to certain HTML documents, but for now it won't because it's just a static website. I'll just show or hide some stuffs.
+            -->
+                <li id="menu" title="Menu" onclick="openMenu()">☰</li>
+                <li title="Home" id="clickHome">Home</li>
+                <li title="About" id="clickAbout">About</li>
+                <li title="Skills" id="clickSkills">Skills</li>   
+                <li title="Contact"  id="clickContact">Contact</li>
+            </ul>
+ 
+     </div><!--For navigation--> 
+    
+    <div id="main">    
+        
+    <div id="home">
+        <div id="homeIntro">
+            
+        <div id="nameIntro">
+        <h1 id="nameIntro1">Ricson Bedolido Escalicas</h1>
+        <!--Used in case when it's very long for small screens-->
+        <h1 id="nameIntro2">Ricson B. Escalicas</h1>
+        </div>
+        <p id="descriptions">Filipino</p>
+        </div><!--for homeIntro-->
+        
+        <div id="homeAbout">
+            
+            <br/> <br/>
+            <div id="authorSaid">
+            <br/>
+            <p id="ricsonSays">To whom it may concern:</p>
+            <br/>
+            <p>Thanks for visiting my website. I greatly appreciated your effort on looking to my mere website. I hope that you've enjoyed your stay here. I might improve this one so stay tune for new updates. </p>
+                <br/>
+            <p>I'm just an ordinary man with passions and dreams. I created this mere project to test my capability in making a website, because studying isn't enough. Furthermore, with an aim to gain an experience in creating a website, I created this one. </p>
+                <br/>
+            <p>I want to expand my skills not only in front-end web development, but also to other subjects mainly related to technology. I want to learn more because I realized the broadness and complexity of modern technology. By having the right knowledge, I might help other people by making their daily lives more easy through the proper usage of modern technology.</p>
+                <br/>
+            </div>
+                <br/>  
+            <div id="copyright">
+                <br/>
+            <p><span class="aboutWarnings">⚠</span> All rights reserved.</p>
+            <p> © Copyright 2020 Ricson B. Escalicas. <wbr>Designed<wbr> and programmed by Ricson B. Escalicas</p>
+                <br/>
+            </div>
+                <br/>
+        </div>
+    </div><!--For home --> 
+
+        <!--for about-->
+        <div class="hide" id="about">
+        <!--The cover pictures are needed when the website is used in phone/desktop computer/laptop to better fit the screen-->
+        <p id="aboutDeveloper">About the Developer:</p>
+        <hr/>
+        <div class="coverPicture">
+        <a href="https://mars.nasa.gov/participate/send-your-name/mars2020/certificate/516858682162" target="_blank">
+            <img src="BoardingPass_MyNameOnMars2020.png" width="100%" height="100%" alt="Cover picture of Ricson" title="Ricson's cover picture"/>    
+        </a>
+        </div>
+            
+        <div id="coverPicture2">
+        <img src="SunnyDay.jpg" height="100%" width="100%" alt="Ricson B. Escalicas"/>    
+        </div>
+            
+        <div id="nameAbout">
+            <p>Hermano Ricson Escalicas</p>    
+        </div>
+        
+        <!--This is when you need to go upward if you dig in -->
+        <a href="#about">
+            <span id="goUp" title="Back to the top?"></span>
+        </a>
+    
+        <!--For navigating the About Section-->
+        <div id="aboutNavigation">
+            <ul>
+                <li id="general" title="General">General</li>
+                <li id="abouT" title="About">About</li>
+                <li id="photos" title="Photos">Photos</li>
+                <li id="hobbies" title="Hobbies">Hobbies</li>
+            </ul>
+        </div>
+ 
+        <div id="downNavigation">
+                <br/>
+            <p id="first">#Filipino</p>
+            <p>#Multilingual</p>
+            <p>#Programmer</p>
+            <p>#Web_Developer</p>
+            <p>#Passionate_to_learn</p>
+            <p>#Hard_working</p>
+            <p id="last">#Friendly</p>
+                <br/>
+        </div>
+            <br/>
+        <div id="theShower">
+            <p id="theShowerP">General:</p>
+        </div> 
+            
+            <div id="forGeneral">
+            <div id="forGenInt">
+                <br/>
+            <p>I'm passionate to learn and I love what I'm doing.</p>
+                <br/>
+            </div>
+                 <br/>
+            <div class="posts" id="post1">
+                <p>I study a lot ✍ </p>   
+            </div>
+                 
+            <div class="postsContent">
+                <p>There's a lot of things that I'd like to learn. I realized how complex the modern technology can be. So I have this initiative to study even more to understand much better on modern technology. Besides, I don't only study technology, I also include other matters like Science, Politics, Linguistics, etc. as long as I'm curious to it and when I realized how useful it could be for me.</p>
+                <br/>
+                <p><span class="important">Studying... studying... studying... ≣≣≣≣ ✍ </span> <br/> I'm a man full of curiosity. I'm passionate to learn interesting things. By being so, I study to understand somehow its very concepts of the subjects that I'm studying with respectively. I wasn't like this before until I realized the importance of knowledge.</p>
+            </div>
+                <br/>
+            <div class="posts" id="post2">
+                <p>I'm a hard working person. ❏ </p>
+            </div>
+                 
+            <div class="postsContent">
+                <p>There's a lot of things I want to achieve, like understanding something complex. To do so, I put a lot of effort and dedication to achieve so. Besides, when there's something I'd like to build like this website for example, I sat on a chair facing the computer for hours especially when bugs are apparent. I work hard on studying as well. I don't actually put a lot of time on studying about technology on school days because there's a lot of minor subjects that often taking a lot of time. I've started studying on February 2019. Since then, I learned a lot of things. </p>
+                    <br/>
+                <p> <span class="important">Eat ♨, Study ✍, Sleep ≐, Repeat ↺</span> <br/> I can't easily achieve something without working for it seriously. Dedication and effort is a must! There's must be no room for laziness. Of course, I take rest when I'm tired. I won't like to push myself beyond, so I take a rest. Besides, while I'm taking  a rest, I often watch videos to gather more insights so no time would be wasted for nothing. Then, I get back to where I left. I studied(February 2019, 16 years old and college is near if God willing) very lately which means, I need to cope up with time. Full-scale rest can take place sometimes wherein I literally waste time.</p>
+            </div>
+                <br/>
+            <div class="posts" id="post3">
+                <p>I don't easily give up on something. ☒ </p> 
+            </div>
+                 
+            <div class="postsContent">
+                <p>Sometimes it's challenging to do things correctly. I've met bugs whether from simple to complex, nevertheless, I always strive to find ways on how to solve it. I don't want to put myself at a brink of surrender, I have courage to continue no matter how hard and how it put a lot of pressure on my brain. Fortunately most of the time, I fixed those bugs through focus, determination and effort. The best thing with this is, I learned from my mistakes and hereby improve my skills as I solved those bugs. </p>
+                <br/>
+                <p><span class="important">Surrender? ⚐ </span> <br/> It's unlikely. I'm willing to stand as long as I can. Resist as I'm still capable of. Feet and legs must be hardened like platinum. It should resist heat like the highest melting point: tungsten. There's must be no place for cowardice. Courage must be always apparent. See and inspire the examples of glorious deeds. Forget not, the reward ahead. Thus, should never be fallen.</p>
+            </div>
+                <br/>
+            <div class="posts" id="post4">
+                <p>I'm a coffee lover ☺ ♥ ☕ </p>              
+            </div>
+                 
+            <div class="postsContent">
+                <p>It helps me in studying because it keeps me awake and alert which is needed in my studying so that I'll learn well. Studying while sluggish is a very bad thing to do so when I'm somewhat tired, I'll likely grab a cup of coffee and then strive in again.</p>
+                    <br/>
+                <p><span class="important">Brief Overview of Being Sleepy <sup>z z z z</sup></span> <br/> As we're awake doing the daily stuffs that we do, our bodies breaking down <abbr title="Adenosine Triphosphate">ATP</abbr> <span class="abbr">Adenosine Triphosphate</span> which results to adenosine, a by-product of <abbr title="Adenosine Triphosphate">ATP</abbr> <span class="abbr">Adenosine Triphosphate</span>. These adenosine will go to adenosine receptors and that's what will make us drowsy, tired, etc. in short, to be sleepy. The more adenosine, the more drowsy can we potentially be. This fact can potentially hinders us to study well because we can't focus sharply due to the tiredness we feel. If we can't study well, then we might not learn new things depending upon what topic we're studying of. </p>
+                    <br/>
+                <p><span class="important">Brief Overview on How Caffeine Works ☕ </span> <br/> Caffeine and adenosine are more or less similar in structure. This fact makes Caffeine to be the best impostor of adenosine! By being so, Caffeine goes to the adenosine receptors in our body and blocking any adenosine to come into. adenosine makes us tired, Caffeine is otherwise. Caffeine is simply the contradiction of tiredness. This will make us feel alert, fast heartbeats, energetic, etc. Coffee can help us in our studies and I'm drinking coffee for that very purpose. Now some of you might be nervous in drinking even just 1mL of coffee due to some rumors about it. The rumors about coffee are just rumors and unproven. Besides, there's also called the Nocebo Effect which makes us feel sicker due to our beliefs that something is harmful. I won't explain much about it and I encourage you to study about it to have more acquaintance. Although Caffeine can be harmful, only on large doses(depending upon body weight) a day. So grab a cup of coffee and drink, then enjoy studying! ;) </p>
+            </div>
+                <br/>   
+            <div class="posts" id="post5">
+                <p>I'm very patriotic.  ⚑ </p>     
+            </div>
+                
+            <div class="postsContent">
+                <p>I'm a very patriotic person. I love my country so much no matter how toxic some Filipinos may be. I'd like to defend it from invaders but other Filipinos don't want to defend their Motherland which seems to be very sad for me. Nevertheless, I should stand or fall with my country! Many of my beloved ancestors had heroic deaths for the defending this country, and I salute all of them from smallest to greatest! </p> 
+                    <br/>
+                <p><span class="important">My Patriotism ⚑ ⚔ ⚖</span> <br/> Who am I? I might be as just negligible and nothing, yet I love my country more than you know. Striving hard to protect it, as a precious treasure that a man can ever have. Jumping into the abyss paying with sweat and blood! Seeing from afar the exemplary heroic deeds of others who existed before us. Fighting hardily, not letting an enemy to take even just an inch without shedding blood. We should fight in land, air and seas with full might and courage. Not wanting war, but should defend this land at all cost. Peaceful as calm water, fierceful if invoke as a stormy ocean! We must stand, like big mountains, fight like lions, resist like the toughest wall ever built since mankind began. Although we don't even have the most advanced technology that the weapon industry have to offer, we're committed to defend as long as we can! We shall stand against the enemy for a free Philippines, for a free Motherland. Hurrah! </p>
+            </div>
+                <br/> 
+            <div class="posts" id="post6">
+                <p>I'm a tech-savvy person. ☻⚡</p>
+            </div>
+            
+            <div class="postsContent">
+                <p>I really love to know how our modern technology works. I'm amazed on how technology works and I'm curious about it. By being so, I study about modern technology and putting a lot of dedication on it. I want to understand at least some of its complexities. Being capable on understanding how it works seems very cool to me. </p>
+                    <br/>
+                <p> <span class="important">World Full of Modern Technology ▤ </span> <br/> As you can see nowadays, we're surrounded by various technologies with its purpose respectively(it can be phones, desktop computers, you name it). Having the knowledge and good intention can make our daily living much simpler through the proper usage of modern technology. Understanding how our modern technology works is very crucial. I love to comprehend how these complex stuffs work so I strive studying to do so. ;> </p>
+            </div>    
+                <br/>  
+            <div class="posts" id="post7">
+                <p>I love Science ☻♥</p>
+            </div>
+            
+            <div class="postsContent">
+                <p>Although I also love Science, I opt technology because I love it more. Science is very important in our society because technology and Science goes hand-in-hand to be fully functional. By that fact, I have the initiative to study also about Science to better understand the concepts of technology. ;) </p>
+                    <br/>
+                <p> <span class="important">Science Everywhere ⚛ </span> <br/> Science is always involved on what happens around us(probably except for, let's say: divine intervention which is beyond our mere comprehension). Science can partially explains the cause-effect in our nature, in all of our surroundings like why do things move, shake, etc. often by Physics. Besides, other fields are also welcome with its respective purposes and applications.</p>
+            </div>
+        </div>
+        
+        <div id="forAbout">
+            
+            <div class="divAbout">
+            <p class="classAbout">Job History ⚒ </p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">Job:</span> Facebook page administrator <a href="https://www.facebook.com/Hermano-Ricson-Escalicas-1109011380608647" id="pageFB" target="_blank">@Hermano Ricson Escalicas</a></p>
+                <br/>
+            <p>At this time, I'm still a senior highschool student and posses no clear records for a job history. </p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Academic Information ☲ </p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">Education:</span> <span class="aboutWarnings">Confidential!</span></p>
+            <p><span class="forAboutCat">Course I want to take:</span> Information Technology</p>
+                <br/>
+            <p>Schools are training grounds for the industry ahead, but some students don't realized it at all.</p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Other Names ☰	</p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">Nicknames: </span>Lavraska, Hermano, Herms, Kuya Ric, Харленкo, etc. </p>
+                <br/>
+            <p>Some of my nicknames are just created by myself. I do so because it's cool to hear of.</p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Civil Status ☑ </p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">Status: </span>Single
+            <br/> <br/> I'm really busy to a lot of stuffs and I have no time to engage in a relationship ahahaha...</p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Basic Information ☶ </p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">Birthday:</span> January 7, 2003</p>
+                <p><span class="forAboutCat">Languages: </span> 
+                    Cebuano, Boholano, Tagalog, American and British English <br/> I'm still studying these languages as of now: Russian, Portuguese, German and Spanish. Probably learning these eventually if God willing.</p>
+            <p><span class="forAboutCat">Interested in: </span>Women</p>
+                
+            <p><span class="forAboutCat">Sex:</span> Of course I'm a male <span style="color: #ffa20e; font-size: 1.50em">♂</span>! Ahahahahaha...</p>
+                
+            <p><span class="forAboutCat">Gender:</span> Masculine</p>
+            
+            <p><span class="forAboutCat">Citizenship:</span> Filipino</p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Political Views ⚖ </p>
+                <br class="ifCp"/>
+            <p><span class="forAboutCat">My views</span>:</p>
+            <p>As a citizen of the Republic of the Philippines, I'm an ally of nobody. I adhere to what is good for my country. If I realized that a politician can make a good radical change in my country(depending upon to its jurisdiction of power i.e. congressman, barangay captain, etc.), then I support him/her in striving through as a good politician. Otherwise is I disgust the most in a political perspective. I define him/her as a garbage in the Filipino Community and garbages are deserving to be put in trash cans.</p>
+            </div>
+                <br/>
+            <div class="divAbout">
+            <p class="classAbout">Mottoes ☵ </p>
+                <br class="ifCp"/>
+            <p class="mottoes">Always push through no matter how hard it can be, because you can't earn it if you don't work for it.</p>
+            <p class="mottoes">Take courage in every hard situations. Prove that you're a man!</p>
+            <p class="mottoes">Always find insights in complex instances.</p>
+            <p class="mottoes">See from from afar the exemplary deeds of others.</p>
+            <p class="mottoes">Must work and focus under pressure, adapt if necessary.</p>
+            </div>
+        </div>
+        
+        <div id="forPhotos">
+            <p class="forStudy" style="text-align:center">My Photos</p>
+                <br/>
+            <img id="photo1" class="photos" src="ricsonisme.jpg" alt="Ricson wearing flaming eyeglass" title="Ricson with flaming eyeglass" width="100%" max-height="350px"/>
+            
+            <img id="photo2" class="photos" src="ricson.jpg" alt="Ricson wearing colorless eyeglass" title="Ricson with colorless eyeglass" width="100%" max-height="350px"/>
+            
+            <img id="photo3" class="photos" src="FourMe.jpg" alt="Four figures of Ricson in one image" title="Four pictures" width="100%" max-height="350px"/>
+            
+            <img id="photo4" class="photos" src="SunnyDay.jpg" alt="Ricson wearing Sunny Day Eyeglass" title="Sunny Day Eyeglass" width="100%" max-height="350px"/>
+            
+            <img id="photo5" class="photos" src="ArabicVersion.jpg" alt="Arabic Version of Ricson" title="Arabic Version" width="100%" max-height="350px"/>
+            
+            <img id="photo6" class="photos" src="Eerie.jpg" alt="Eerie" title="Eerie" width="100%" max-height="350px"/>
+            
+            <img id="photo7" class="photos" src="ArabicVersion2.jpg" alt="Arabic Version of Ricson 2" title="Arabic Version 2" width="100%" max-height="350px"/>
+            
+            <img id="photo8" class="photos" src="ArabicVersion6.jpg" alt="Arabic Version of Ricson 6" title="Arabic Version 6" width="100%" max-height="350px"/>
+            
+            <img id="photo9" class="photos" src="ArabicVersion4.jpg" alt="Arabic Version of Ricson 4" title="Arabic Version 4" width="100%" max-height="350px"/>
+            
+            <img id="photo10" class="photos" src="LeanTheWall.jpg" alt="Ricson is leaning against the wall" title="Leaning against the wall" width="100%" max-height="350px"/>
+                <hr/>
+                <br/>
+            <div id="myModal" class="modal">
+            <span id="close" onclick="closePhoto()">×</span>
+            <img class="modal-content" id="image"/>
+            <div id="caption"></div>
+            </div>
+        </div>
+        
+        <div id="forHobbies">
+            <div id="forHobbiesIntro">
+                <br/>
+                <p>My hobbies, the best part of this section. </p>
+                <br/>
+            </div>
+                <br/>
+            <div class="hobbiesDiv">
+            <div class="hobbiesExp">
+            <p class="forHobbiesTtle">Studying ✍</p>
+                <br/>
+            <p style="text-align: center">This thing is the first of all. I'm passionate to learn and I'm curious about the things around me. By being so, I study a lot about the things that I'd like to learn of. This habit is most frequent one that I do.</p> 
+            </div>
+                <br/>
+            <p>I'm studying to learn something:</p>
+                <br/>
+            <p><span class="forStudy">Information Technology</span> <br/> This is can be referred to front-end web development, programming, computer hardware and anything that's related to this field. This field is the forefront of my studies as I want to take this course on college if God willing. Besides, I want to be a successful programmer someday if God willing. </p>
+                <br/>
+            <p><span class="forStudy">Science</span> <br/>
+            We know that there are many branches in Science. There are Physics, Microbiology, Exobiology, Botany, Biology, etc. just to name a few. In nature, Science is always involved. Studying Science means having an awareness about the nature of this earth.</p> <br/>
+            <p>Well I study these branches and I'll explain why:         <br/> 
+            <p class="branchSci" title="Physics">Physics</p>
+            <p class="branchSciShow">I love to understand how physical objects behave. I may use this knowledge eventually like creating something. Having a grasp at this is very crucial in a way you won't comprehend easily.</p> 
+                <br/>
+            <p class="branchSci" title="Microbiology"> Microbiology </p>
+            <p class="branchSciShow">We know that microbes or pathogens exist like bacterias, viruses, parasites, etc. Some of them can be fatal when inside your body. The best example is <span class="aboutWarnings">COVID-19</span> which can potentially kill you. Having a glimpse in Microbiology means having an awareness about the dangers of these dangerous(not all microbes) tiny creatures. So I won't easily do the things that can get microbes like walking barefoot, eating without washing my hands, etc. due to the awareness of these tiny creatures. Thus, I protect myself by the preventative measures that I know about.</p>
+                <br/>
+            <p class="branchSci" title="Human Anatomy">Anatomy</p>
+            <p class="branchSciShow">I'd like to understand how our certain body parts work and how to keep them healthy. It's good to know the weak parts and strong parts of each organ.</p>
+                <br/>
+            <p>These three aren't the only ones that I'm studying of.</p>
+                <br/>
+            <p><span class="forStudy">Linguistics</span> <br/> 
+            To be able to communicate with a lot of people is a crucial thing, no matter their races may be. I selected some languages to be studied. <br/> <br/>
+            I'll explain why I study these languages. </p>
+            
+            <p class="linguisticClick" title="German" id="german"><span id="lc1">German</span> <span id="deutsch">Deutsch Sprache</span></p>
+            <p class="linguisticShow">The thing that I love with this language is its accent. When Germans speak to each other, the sound is very lovely to me. That's why I study this language. </p> <br/>
+            
+            <p class="linguisticClick" title="Portuguese" id="portugueS" class="lcs"><span id="lc2">Portuguese</span> <span id="portugues">O língua de Português</span></p>
+            <p class="linguisticShow">Well, I study this language in a particular confidential reason. I want to learn this because I want to communicate with some specific people. Anyway, it's spoken in Brazil and Portugal making it good to learn of, so I'll speak to a lot of people if I learned it.</p> <br/>
+            
+            <p class="linguisticClick" title="Russian" id="russian"><span id="lc3">Russian</span> <span id="russiaN">Русский Язык</span></p>  
+            <p class="linguisticShow"> Russian language is a Slavic language. I study this one because their songs are cool. Furthermore, this language are spoken to other post-Soviet states which means I can speak to some people outside of Russia if I learned it.</p> <br/>
+            
+            <p class="linguisticClick" title="Spanish" id="spanish"><span id="lc4">Spanish</span> <span id="espanol">La idioma de español</span></p>  
+            <p class="linguisticShow">First of all, I have a long old distant Spanish blood on my mother's side. As a respect to my distant Spanish ancestors, I study Spanish. Furthermore, it's spoken in some parts of Latin America and in Spain so it will give me an advantage to talk to a lot of people. </p>
+                <br/>
+            <p><span class="forStudy">Military Tactics</span> <br/> Sounds weird though but I actually study such matter. The world is full of potential threats and I should know how to defend myself in times of aggression and terrorism. I even analyze some military equipments, train myself to be be physically fit, etc. about military tactics. The cool part of this is focus under pressure which is applied especially during combat. This one can probably be used at studying in stressful environments. </p>
+                <br/>
+            <p><span class="forStudy">History</span> <br/> 
+            Maybe it's not really needed but I give importance to history so I include it in my studies. I chiefly study about historical wars, various civilizations, magnificent ancient infrastructures, etc. Some of the architecture ingenuity of some ancient civilizations are mesmerizing to look at, even though they didn't had modern equipments, they were capable of building something magnificent! By watching documentaries regarding to this, I can have insights on how they did so and how clever they were. That's what make history somehow awesome!</p>
+            </div>
+                <br/>
+            <div class="hobbiesDiv">
+            <div class="hobbiesExp">
+            <p class="forHobbiesTtle">Drinking Coffee ☕</p>
+                <br/>
+            <p style="text-align: center"> I love coffee because it helps me to a lot of aspects. I often drink coffee like once a day to better cope up to everything that I'm doing.</p>    
+            </div>
+                <br/>
+            <p>Drinking coffee ☕ with its finest reasons:</p>
+                <br/>
+            <p><span class="forCoffee">Coffee for Energy</span> <br/> Coffee doesn't actually give me energy as others may have initially thought, what it does is to make me feel more energize by getting rid of adenosine and replacing with caffeine to feel energize, faster heart beats, etc. to actively do what I want.</p>
+                <br/>
+            <p><span class="forCoffee">Its Aroma</span> <br/> I love the savory aroma of coffee which makes me feel better. Aromas of coffees may vary upon every products but they have one aroma in common because they came from coffee beans.</p>
+                <br/>
+            <p><span class="forCoffee">Its Taste</span> <br/> I love the taste of coffee regardless of its bitterness like Nescafe Stick for example. Various tastes can be found as well depending to those who manufactured the finish products but they also have in common because they came from coffee beans. There are sugary coffees and I prefer the pure ones. </p>
+            </div>
+                <br/>
+            <div class="hobbiesDiv">
+            <div class="hobbiesExp">
+                <p class="forHobbiesTtle">Body Preparation ⚔</p>
+                    <br/>
+                <p style="text-align: center">I want to be physically fit and strong to better prepare myself when needed.</p>
+            </div>
+                <br/>
+            <p>Exercising  for various preparations ⚔:</p>
+                <br/>
+            <p><span class="forPre">To Protect</span> <br/> I know that there's a lot of instances that my life would be at risk by other people who's dangerous to deal with. I'm preparing my body in its aspects to defend myself against potential treats like making my body stronger, learning how to deal with them in case of a fierce fighting. </p>
+                <br/>
+            <p><span class="forPre">To Defend</span> <br/> I saw some horrible incidents depicted in SOCO, Imbestigador, etc. which are based on real-life events. I feel wrath when seeing such and wishing that I could defend them. I may probably witness such horrible events in front of me and I should be ready to defend such. </p>
+                <br/>
+            </div>
+        </div>
+    </div> 
+
+        <!--for about-->
+        
+        <!-- For skills -->
+    <div class="hide" id="skills"> 
+        <!--These buttons are necessary for each skills division. I need to put three with toggle to appear if 1-3 skills divisions is/are opened. It won't appear if all of them are closed or not yet opened.-->
+        <a href="#skills">
+            <span  id="goUp1" title="Back to the top?"></span>
+            </a>
+        <a href="#skills">
+            <span id="goUp2" title="Back to the top?"></span>
+            </a>
+        <a href="#skills">
+            <span  id="goUp3" title="Back to the top?"></span>
+            </a>
+        
+        <p id="mySkills">Developer's skills:</p>
+        <hr/>
+        
+        <div id="technologicalSkills">
+             
+            <p id="tsSkills">Technological Skills ▓ </p>
+            
+        </div>
+        
+        <!-- For navigating the TS skills Division. -->
+        <div id="tsShowerNav" class="showCon">
+                <ul>
+                    <li title="Hypertext Markup Language" id="tsSNHTML">HTML</li>
+                    <li title="Cascading Style Sheets" id="tsSNCSS">CSS</li>
+                    <li title="JavaScript" id="tsSNJs">JavaScript</li>
+                    <li title="Hardware" id="tsSNHd">Hardware</li>
+                    <li title="Networking" id="tsSNNet">Networking</li>
+                    <li title="Others..." id="tsSNO">Others</li>
+                </ul>
+            
+            <div id="tsShowerCon">
+                
+                <div id="tsShower">
+                    <p id="tssShower">Introduction</p>
+                </div>
+                
+                <div id="tsSkillsForGen">
+                     
+                <div class="divForGens">
+                    <p class="divForGensTtle">Introduction on my Technological Skills </p>
+                        <br/>
+                    <p>I pursue to understand technology of our modern world. I strive hard studying to do so. Before February 2019 which is the month I started studying, I had no plans on what I was doing to do for the future if God willing. Then someone went to our school lecturing about Information Technology and I was convinced about such matter. I realized that it's very important to study about modern technology. Since then, I've started studying and it seems that it's all worth it. </p>
+                    
+                        <br/>
+
+                    <p>Sometimes, I forgot some important topics so I need to review it again to increase the synapses of my neurons so that it won't be easily forgotten. I'm studying with the help of <a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank">SoloLearn</a>, <a href="https://play.google.com/store/apps/details?id=com.W3school.Anbu" target="_blank">W3Schools</a>, <a href="https://www.youtube.com/edurekaIN" target="_blank">edureka!</a>, <a href="https://www.youtube.com/c/BRIGHTSIDEOFFICIAL" target="_blank">BRIGHT SIDE</a>, <a href="https://www.youtube.com/c/BranchEducation" target="_blank">Branch Education</a>, <a href="https://www.youtube.com/channel/UC54w2TX_xUNPQ0d-3VvbsHQ" target="_blank">Futurology</a>, <a href="https://www.youtube.com/c/LearnEngineering" target="_blank">Learn Engineering</a>, <a href="https://www.youtube.com/c/WebDevSimplified" target="_blank">Web Dev Simplified</a>, <a href="https://www.youtube.com/c/DesignCourse" target="_blank">DesignCourse</a>, <a href="https://www.youtube.com/c/ColdFusion" target="_blank">ColdFusion</a>, <a href="https://www.youtube.com/teded" target="_blank">TED-Ed</a>, <a href="https://www.youtube.com/c/dcode-software" target="_blank">dcode</a>, <a href="https://www.youtube.com/c/Freecodecamp" target="_blank">freeCodeCamp.org</a>, <a href="https://www.youtube.com/c/EasyTutorialsVideo" target="_blank">Easy Tutorials</a>, <a href="https://www.youtube.com/c/Techquickie" target="_blank">Techquickie</a>, <a href="https://www.youtube.com/c/CSDojo" target="_blank">CS Dojo</a>, <a href="#" target="_blank">Online Web Tutorials</a>, <a href="https://www.youtube.com/c/WebsiteLearners" target="_blank">Website Learners</a>, <a href="https://www.youtube.com/c/OnlinewebustaadCom" target="_blank">Online web ustaad</a>, <a href="https://www.youtube.com/user/crashcourse" target="_blank">Crash Course</a>, <a href="https://www.youtube.com/c/Theengineeringmindset" target="_blank">The Engineering Mindset</a> and many others that have technology-related contents. I made the list long because I suppose that you're a student also who are passionate about technology. Anyway, if you want to improve in this field, better check them out!</p>
+                        <br/>
+                    <p>I'm dedicating a lot of time to better improve my skills at this one, as I want to be a programmer someday if God willing. I want to create something out of scratch through the proper usage of modern technology. I'm looking forward to learn more at this set of skill.</p>
+                </div>
+                   
+                </div>
+                
+                <div id="tsForHTML">
+                    <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology.  </p>
+                    <br/>
+                    
+                    <p class="tInfo" title="About HTML">About</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="whatIs">What is HTML?</p>
+                    <p><span style="color: #b15100">Hypertext Markup Language</span> or <span style="color:#b15100">HTML</span> as the name implies is a markup language. A markup language uses tags to define its content. It's used in creating the structure of a website.</p>
+                        
+                    <p><span class="important">⚔</span> HTML documents are defined by HTML tags</p>
+                    <p><span class="important">⚔</span> Each HTML tag defines different document content</p>
+                    <p><span class="important">⚔</span> HTML is composed of tags</p>
+                    <br/>
+                        
+                    <p class="whatIs">HTML Tags</p>
+                    <p>HTML tags are keywords surrounded by less than and greater than signs.</p>
+                    <p ><span class="important">⚔</span> <span style="color:#b15100">HTML</span> tags chiefly come in pairs. In analogy, it looks like a sandwich.</p>
+                    <p><span class="important">⚔</span>  Not all tags has pairs on its own.</p> 
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="History of HTML">History</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">The initiation of World Wide Web</p>
+                    <p >When the World Wide...</p>
+                        <br/>
+                    <p>Know more about the history of World Wide Web:</p>
+                    <a href="https://youtu.be/J8hzJxb0rpc" target="_blank">What is the World Wide Web?</a>
+                        <br/>
+                    <a href="https://youtu.be/WlryJFyr10" target="_blank">An animated history of the World Wide Web</a>
+                        <br/>
+                    <a href="https://youtu.be/k0gvAyCubGQ" target="_blank">A brief history of the World Wide Web</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="My reason is...">Reason</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="different">Hypertext Markup Language is crucial for web development. When I started studying, programming is so complicated especially on February 2019(the time I started studying) because I was not very familiar to it. Besides, I didn't have any fundamental backgrounds on such matter. So I switched into website development which is very friendly for me at that time.  <abbr title="Hypertext Markup Language">HTML</abbr> <span class="abbr">Hyper Markup Language</span> is good to learn of as a plain beginner. Although it's not a programming language, it will help me to have a glimpse as a beginner rather than engaging to something complicated directly.</p>
+                       <br/> 
+                    <p class="tIHConCat">Certificate:</p>
+                        <a href="HTML_Certificate.pdf" target="_blank" class="certificateHolders">
+                            <img src="HTML.jpg" width="50%" height="50%" alt="HTML Certificate"/>
+                        </a>    
+                    <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1014-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1014-13284107/pdf/</a></p>
+                    <p>I would like to improve my skills in HTML even more. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                
+                <div id="tsForCSS">
+                    <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology.  </p>
+                        <br/>
+                    <p class="tInfo" title="About CSS">About</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">What is CSS?</p>
+                    <p><span style="color:#b15100">CSS</span> is a style sheet language that defines the presentation of a website. <span style="color:#b15100">CSS</span> defines how certain elements in a website must be displayed. It basically means that it's the one who make a website looks so good in design.</p>
+                    <p><span class="important">⚔</span> CSS is composed of selectors, properties and values.</p>
+                    <p><span class="important">⚔</span> It can handle some events on your <abbr title="Document Object Model">DOM</abbr> <span class="abbr">Document Object Model</span> like hovering over a particular element, clicking a certain element and so on.</p>
+                    <p><span class="important">⚔</span> CSS designs a website</p>
+                    </div>
+                     
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="History of CSS">History</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="whatIs">The Start of CSS</p>
+                    <p>The websites before were just plain text with no creative designs. Then CSS came and made websites look very good at its various designs. </p>
+                        <br/>
+                    <p>See about this one:</p>
+                    <a href="https://youtu.be/XYTwYmOjqQs" target="_blank">Evolution of Web Design 1990 - 2019</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="My reason is...">Reason</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="different">After studying the fundamentals of  <abbr title="Hypertext Markup Language">HTML</abbr> <span class="abbr">Hypertext Markup Language</span>, I started studying <abbr title="Cascading Styles Sheets">CSS</abbr> <span class="abbr">Cascading Style Sheets</span> which is used on designing a website. Thus making a website a good stuff to look at. As I pursue to be a website developer, I need to study such matter to be able to design a website in a creative way. </p>   
+                        <br/>
+                    <p class="tIHConCat">Certificate:</p>
+                    <div class="certificateHolders">
+                        <a href="CSS_Certificate.pdf" target="_blank">
+                            <img src="CSS.png" width="50%" height="50%" alt="CSS Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1023-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1023-13284107/pdf/</a></p>
+                        <p>I would like to improve my skills at CSS to better design a website and be more creative. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                
+                <div id="tsForJs">
+                        <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology. </p>
+                        <br/>
+                    <p class="tInfo" title="About JavaScript">About</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">What is JavaScript?</p>
+                    <p><span title="JavaScript" style="color:#ffa700">JavaScript</span> is the default programming language of websites. It's used in programming a website on front-end. It has many frameworks and libraries to make writing <span style="color:#ffa700">JavaScript</span> code more efficient.</p>
+                    <p><span class="important">⚔</span> <span title="JavaScript" style="color:#ffa700">JavaScript</span> is used to program the behavior of web pages</p>
+                    <p><span class="important">⚔</span> It can manipulate the <abbr title="Document Object Model">DOM</abbr><span class="abbr">Document Object Model</span> like changing the content, redefining elements' sizes(usually by event handlers), and so on.</p>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="History of JavaScript">History</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">A Brief Story of JS</p>
+                    <p>JavaScript was created by Brendan Eich in 1995, and it became an ECMA standard in 1997. ECMAScript 6 which is released in June 2015, is the latest official version of JavaScript today. </p>
+                        <br/>
+                    <p>More about the history of JavaScript:</p>
+                    <a href="https://youtu.be/Sh6lK57Cuk4" target="_blank">The Weird History of JavaScript</a>
+                        <br/>
+                    <a href="https://youtu.be/3-9fnjzmXWA" target="_blank">A Brief History of JavaScript by the Creator of JavaScript</a>
+                        <br/>
+                    <a href="https://youtu.be/NQUjEo9iqfo" target="_blank">The History of JavaScript | How the language got to where it is today</a>
+                        </div>
+                    </div>
+                    <br/>
+                    <p class="tInfo" title="My reason is...">Reason</p>
+                    <div class="tInfoHolder">
+                        <div  class="tIHContent">
+                            <p class="different">After studying <abbr title="Cascading Styles Sheets">CSS</abbr><span class="abbr">Cascading Style Sheets</span>, I started studying <span title="JavaScript" style="color:#ffa700">JavaScript</span> which is fortunately, a programming language! This programming language will help me on how to make a website that's interactive to deal with. I need to study such matter to put interactiveness upon my website. </p>
+                        <br/>
+                    <p class="tIHConCat">Certificate:</p>
+                    <div class="certificateHolders">
+                        <a href="JavaScript_Certificate.pdf" target="_blank">
+                            <img src="JavaScript.png" width="50%" height="50%" alt="JavaScript Certificate"/>
+                        </a>    
+                    </div>
+                    <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1024-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1024-13284107/pdf/</a></p>
+                    <p>I would like to improve my JavaScript skills to better come up with cool interactivity. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                        </div> 
+                    </div>
+                        <br/>
+                </div>
+                
+                <div id="tsForHardware">
+                        <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology.  </p>
+                        <br/>
+                    <p class="tInfo" title="About Hardware">About</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">What is Hardware?</p>
+                    <p>Hardware is the physical stuff on what you see in computers. It's composed of a lot of various metals like: iron, copper, silver and even gold! They're used because they conduct electricity very well. It can be the keyboard, mouse, monitor and so on. You name it!</p>
+                    <p><span class="important">⚔</span> It's the very foundation of creating devices.</p>
+                    <p><span class="important">⚔</span> It's composed of a lot of electronic devices like: transistors, conductors, <abbr title="Printed Circuit Board">PCB</abbr><span class="abbr">Printed Circuit Board</span>, heat sinks, fans, etc. depending what on device it is and what it's designed for.</p>
+                        <br/>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="History of Hardware">History</p>
+                    <div class="tInfoHolder">
+                     
+                    <div  class="tIHContent">
+                    <p class="whatIs">The Hardware's Creation</p>
+                    <p>The beginning of computers' hardware began when the first computers were being built. Those old legendary stuffs are unreliable and they could even took a whole room. What we see today is thanks to the hard-working engineers that improved the overall functionality of modern computers. Let's be honest, some of our computer hardware is creating bottlenecks and, hardware are improving through our another generation of hard-working engineers.</p>
+                        <br/>
+                    <p>More about the history of computer hardware:</p>
+                    <a href="https://youtu.be/WU_Xfk3rWvA" target="_blank">The History of Computer Hardware</a>
+                        <br/>
+                    <a href="https://youtu.be/rLrmN38TEmU" target="_blank">History Of The Computer!</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="My reason is...">Reason</p>
+                    <div class="tInfoHolder">
+                     
+                    <p class="tIHContent">In order to have a grasp on how a computer works, I need to study hardware. Software and hardware are binded together to be effective and to be functional. Our modern technologies have hardware and software binded together and that what it makes to function as it is. I don't stick to software only, I stick to what I need to learn as a tech-savvy person. My sources in studying such is primarily on a YouTube channel: <a href="https://www.youtube.com/c/PowerCertAnimatedVideos" target="_blank">PowerCert</a>, and other sources which have credibility as well.</p>
+                    </div>
+                    <br/>
+                </div>
+                
+                <div id="tsForNet">
+                        <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology.  </p>
+                        <br/>
+                    <p class="tInfo" title="About Networking">About</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="whatIs">What is Networking?</p>
+                    <p>Networking in technological terms, is the process of <span class="takeNote">sending and receiving of data</span> whether in a wired or a wireless medium. They're composed of various equipments dedicated to its cause like switches, routers, etc.</p>
+                        <br/>
+                    <p class="whatIs">Types of Networks</p>
+                    <p>The types of networks define on how a particular type <span class="takeNote">cover an area geographically.</span></p>
+                        <br/>
+                    <p class="types">PAN</p>
+                    <p>PAN stands for <span class="takeNote">Personal Area Network</span>. It's used for connecting devices such as phones, tablets, laptops , etc. in a close proximity to each other. They're connected using <span class="takeNote">Bluetooth</span>, <span class="takeNote">Infrared</span>, <span class="takeNote">NFC(Near Field Communicator)</span> and it can also connect through a wired medium like a <abbr title="Universal Serial Bus">USB</abbr><span class="abbr">Universal Serial Bus</span> cable. They're often used for transferring small files like musics, videos, and so on.</p>
+                        <br/>
+                    <p class="types">LAN</p>
+                    <p>LAN stands for <span class="takeNote">Local Area Network</span>. This network is composed of devices such as computers, servers, switches, printers, etc. that are located on the same building like inside a house or a small office. The most common type of LAN is called <span class="takeNote">Ethernet LAN</span> which used Ethernet cables.</p>
+                        <br/>
+                    <p class="types">WLAN</p>
+                    <p>WLAN stands for <span class="takeNote">Wireless Local Area Network</span>. As the name implies, it's a LAN which transfers and receives data in a wireless medium. Also take note that it uses some cables though that are used by the modem and the router but it generally sends and receives data in wireless way.</p>
+                        <br/>
+                    <p class="types">CAN</p>
+                    <p>CAN stands for <span class="takeNote">Campus Area Network</span>. It's a network that joins two or more LANs together within a limited area. A CAN could be a school that has multiple buildings in the same area that are connected to each other to create a larger network.</p>
+                        <br/>
+                    <p class="types">MAN</p>
+                    <p>MAN stands for <span class="takeNote">Metropolitan Area Network</span>. It's a network larger than a CAN. This network spans to several buildings in a city or town. They're usually connected using <span class="takeNote">Fiber optics</span> so the data will be transferred much faster.</p>
+                        <br/>
+                    <p class="types">SAN</p>
+                    <p>SAN stands for <span class="takeNote">Storage Area Network</span>. This is a high-speed network that stores and provides access to large amounts of data. It's a dedicated <span class="takeNote">network used for data storage</span>. It's composed of <span class="takeNote">disk arrays</span>, <span class="takeNote">switches</span> and <span class="takeNote">servers</span>.</p>
+                        <br/>
+                    <p class="types">WAN</p>
+                    <p>WAN stands for <span class="takeNote">Wide Area Network.</span> It's the <span class="takeNote">largest type of network</span>. This spans to countries, continents and even the entire globe. The <span class="takeNote">internet</span> is the best example of a WAN.</p>
+                        <br/>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="History of Networking">History</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContent">
+                    <p class="whatIs">The Initiation of the Internet</p>
+                    <p>Internet began at the United States of America at just four computers initially. Then the network grew and the rest is history. Better check them out to learn more. It's quite long to summarize, so let these videos explain the rest  for you. :) </p>
+                        <br/>
+                    <a href="https://youtu.be.com/1UStbvRnwmQ" target="_blank">How the Internet Was Invented | The History of the Internet, Part 1</a> <br/>
+                    <a href="https://youtu.be.com/1CsPHKJWiw0" target="_blank">How the Internet Became a Thing | The History of the Internet, Part 2</a> <br/>
+                    <a href="https://youtu.be.com/eYkXD_cGUYU" target="_blank">The Data Explosion | The History of the Internet, Part 3</a> <br/>
+                        <br/>
+                    <a href="https://youtu.be/8sTy8466MoE" target="_blank">A Brief History of the Internet - First Web, First Meme...</a>    
+                    <p></p>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="My reason is...">Reason</p>
+                    <div class="tInfoHolder">
+                     
+                    <p class="tIHContent">Networking is such a part of our modern era of technology that's primarily used on sending and receiving data between networks like: <abbr title="Local Area Network">LAN</abbr><span class="abbr">Local Area Network</span>, <abbr title="Personal Area Network">PAN</abbr><span class="abbr">Personal Area Network</span>, etc. Having a glimpse at this subject is very crucial on understanding further about the sending and receiving of data between various types on networks. I need such because it'll help me a lot. My sources in studying such is primarily on a YouTube channel: <a href="https://www.youtube.com/c/PowerCertAnimatedVideos" target="_blank">PowerCert</a>, and other sources which have credibility as well.</p>
+                    </div>
+                        <br/>
+                </div>
+                
+                <div id="tsForOthers">
+                        <br/>
+                    <p class="introTech">In our present day, various technologies are around us, whether transportation, communication, etc. Our lives are greatly changed by modern technology and it makes our daily lives much easier. Having a grasp on this matter will be an advantage in the world full of technology.  </p>
+                        <br/>
+                    <p class="tInfo" title="Java">Java</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                        
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About Java:</p>
+                        <p>Java is a high level programming language that's designed in the early 1990s by Sun Microsystems, and it's currently owned by Oracle company. Java is cross-platform, wherein you just need to write the program once to be able to run it various platforms like Windows, MAC OS, etc. Java is portable, robust and dynamic,  and it has the ability to sustain the needs of virtually any type of application.</p>
+                            <br/>
+                        <p>Java is used by more than 3 billion devices. Some usage of Java is Google's Android OS, various desktop applications, like media players, anti-virus programs, and others.</p>
+                    </div>  
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on Java. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="Java_Certificate.pdf" target="_blank">
+                            <img src="Java.png" width="50%" height="50%" alt="Java Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1068-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1068-13284107/pdf/</a></p>
+                        <p>Just to have an acquaintance with this programming language. I'm looking forward to improve my skills in Java even more, if God wiling.</p>
+                            </div>   
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="Hypertext Preprocessor">PHP</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                     
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About Hypertext Preprocessor:</p>
+                        <p>PHP means Hypertext Preprocessor and it's free, very popular, open source server-side scripting language. Its scripts are executed on a server.</p>
+                            <br/>
+                        <p>PHP is capable of:</p>
+                        <p><span class="important">✠</span> Generate dynamic website content</p>
+                        <p><span class="important">✠</span> Create, read, update, delete and closing files on a server</p>
+                        <p><span class="important">✠</span> Collecting data from forms</p>
+                        <p><span class="important">✠</span> Add, update and delete the information stored on a database</p>
+                        <p><span class="important">✠</span> Encrypt the data</p>
+                        <p><span class="important">✠</span> and many more...</p>
+                    </div> 
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on PHP. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="PHP_Certificate.pdf" target="_blank">
+                            <img src="PHP.png" width="50%" height="50%" alt="PHP Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1059-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1059-13284107/pdf/</a></p>
+                        <p>I'd like to improve my skills being at PHP to better deal with a server. </p>
+                            </div>  
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="Structured Query Language">SQL</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                    
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About Structured Query Language:</p>
+                        <p> SQL means: Structured Query Language. It's used to access and control a database. MySQL is a program used in understanding SQL.</p>
+                            <br/>
+                        <p>SQL is capable of:</p>
+                        <p><span class="important">✠</span> Insert, update and delete various records stored on a database</p>
+                        <p><span class="important">✠</span> Create or delete databases, tables, etc. </p>
+                        <p><span class="important">✠</span> retrieve data that's stored on a database</p>
+                    </div>
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on SQL. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="SQL_Certificate.pdf" target="_blank">
+                            <img src="SQL.png" width="50%" height="50%" alt="SQL Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1060-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1060-13284107/pdf/</a></p>
+                        <p>I like to understand on how to communicate with SQL databases which is necessary if, I have a dynamic website that I'm planning to create. Furthermore, it will improve my skills as a developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="Angular + NestJs">Angular + Nest Js</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                        
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About Angular and Nest Js:</p>
+                        <p class="tIHConCat">Angular</p>
+                        <p>Angular is a front-end JavaScript  framework. A framework is a set of libraries designed for a specific language and in this case, it's for JavaScript. The framework's job is to provide conventions that support doing things in a particular way. </p>
+                            <br/>
+                        <p class="tIHConCat">NestJs</p>
+                        <p>NestJs is simply a type of web application server that's built with Node.js and it uses TypeScript as its primary language. Node.js allows JavaScript to perform outside of a browser, thus giving it the ability to create servers and command line interfaces.</p>
+                    </div>
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>    
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on both Angular and Nest Js. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="AngAndNest_Certificate.pdf" target="_blank">
+                            <img src="AngAndNest.jpg" width="50%" height="50%" alt="Angular + NestJs Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1092-13284107" target="_blank">https://www.sololearn.com/Certificate/1092-13284107</a></p>
+                        <p>Angular and Nest Js are used by full-stack developers. I'd like to be a full-stack developer as well, if God willing. ...</p>
+                            </div>  
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="jQuery">jQuery</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                         
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About jQuery:</p>    
+                        <p>jQuery is a JavaScript library ad it's fast and small. It makes much simpler to do things like HTML document traverse and manipulation, various event handling, etc. All the power of jQuery is accessed through JavaScript, so having the a strong understanding of JavaScript is a must when working with jQuery. jQuery is supported by major browsers including even the Internet Explorer 6! </p>
+                    </div>
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on jQuery. A certificate is just a piece of paper on whatever format, skills only truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="jQuery_Certificate.pdf" target="_blank">
+                            <img src="jQuery.jpg" width="50%" height="50%" alt="jQuery Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1082-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1082-13284107/pdf/</a></p>
+                        <p>jQuery is a JavaScript library. This stuff can make the coding process much simpler by writing less, doing more. Having the knowledge at this library can be shorten the JavaScript code which is good especially when you're writing a very long one.</p>
+                            </div>    
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="React + Redux">React + Redux</p>
+                    <div class="tInfoHolder">
+                     
+                    <div class="tIHContentOthers">
+                     
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">About React and Redux:</p>    
+                        <p class="tIHConCat">React</p>
+                        <p><q>React (also know as React.js or ReactJS) is an open-source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</q></p>
+                        <p>Source: <a href="https://en.m.wikipedia.org/wiki/React_(web_framework)" target="_blank">React (web framework)</a></p>
+                            <br/>
+                        <p>Learn more about React:</p>
+                        <a href="https://youtu.be/0KlRgFEEz0g" target="_blank">What is React?</a>
+                            <br/>
+                        <p class="tIHConCat">Redux</p>
+                        <p><q>Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to (and inspired by) Facebook's flux architecture, it was created by Dan Abramov Clark.</q></p>
+                        <p>Source: <a href="https://en.m.wikipedia.org/wiki/Redux_(JavaScript_library)" target="_blank">Redux (JavaScript library)</a></p>
+                            <br/>
+                        <p>Learn more about Redux:</p>
+                        <a href="https://youtu.be/mhzO-VL6U2I" target="_blank">What Is Redux?</a>
+                    </div>
+                        <br/>
+                    <div class="tIHCOCon">
+                        <p class="tIHConCat">Certificate:</p>
+                        <p>Although probably it can't be used in getting a job, this certificate testifies that I have the fundamental knowledge on both React and Redux. A certificate is just a piece of paper in whatever format, only skill truly matters.</p>
+                    <div class="certificateHolders">
+                        <a href="ReaAndRed_Certificate.pdf" target="_blank">
+                            <img src="ReaAndRed.png" width="50%" height="50%" alt="React + Redux Certificate"/>
+                        </a>    
+                    </div>
+                        <p>Validate URL: <a href="https://www.sololearn.com/Certificate/1097-13284107/pdf/" target="_blank">https://www.sololearn.com/Certificate/1097-13284107/pdf/</a></p>
+                        <p>React and Redux are used by full-stack developers....</p>
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="Algorithm making">Algorithms</p>
+                    <div class="tInfoHolder">
+                    
+                    <div class="tIHContent">
+                        <p>I have experience in coming up with various algorithms needed for various tasks. I get such experience on <a href="www.code.org" target="_blank">www.code.org</a>. I spent grueling times thinking how to solve some algorithm challenges in such website. By doing so, my mind was forced to think on how to make efficient and effective algorithms which may be helpful in making algorithms later for my projects if God willing.</p>
+                    <br/>
+                    <p class="tIHConCat">Certificates link/s: </p>
+                    <a href="https://code.org/v2/hoc/certificate/eyJuYW1lIjoiUmljc29ulEIuIEVzY2FsaWNhcyIsImNvdXJzZSI6IkN1cnNvIEV4cHJlc3MgKDIwMTgpIn0=.jpg" target="_blank">Course Express(2018)</a>
+                    <p>They're actually many but this is the one I'd like to show. You might think something since I stated that I've studied at February 2019 but the certificate depicts otherwise. I took the old course(2018) rather than the 2019 version.</p>
+                    <a></a>
+                    <a></a>    
+                    </div>
+                    
+                    </div>
+                        <br/>
+                    <p class="tInfo" title="Programming Languages"> Others</p>
+                    <div class="tInfoHolder">
+                    
+                    <div class="tIHContent">
+                    <p class="different">As I said, I want to expand more in the fields of technology. If there's something I need to learn: a programming language and whatsoever, then I'll study it if God willing. Besides, all programming languages that I need to learn are points of my interest. I'm looking forward to learn more programming languages to better improve my skills.</p>
+                        </div>
+                    </div>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="languageSkills">
+             
+            <p id="lsSkills">Linguistic Skills ✍ </p>
+            
+        </div>
+        
+        <!--For navigating the LS skills division -->
+        <div id="lsShowerNav" class="showCon">
+                <ul>
+                    <li title="Tagalog" id="cTagalog">Tagalog</li>
+                    <li title="Visayan" id="cVisaya">Visaya</li>
+                    <li title="English" id="cEnglish">English</li>
+                    <li title="Others..." id="cOthers">Others</li>
+                </ul>
+            
+            <div id="lsShowerCon">
+ 
+                <div id="lsShower">
+                    <p id="lssShower">Introduction</p>
+                </div>
+
+                <div id="lsSkillsForGen">
+                     
+                <div class="divForGens">
+                    <p class="divForGensTtle">Introduction on my Linguistic Skills</p>
+                    <p>I like socializing to a lot of people, especially for those people that have the same interests as I am. By having such interest, I'm studying some languages. Anyway, it looks cool when I can speak with many languages. It seems an advantage for me as well, not only in socialization, but also in communication. ;) </p>
+                        <br/>
+                    <p>Tagalog, Visayan and English languages are emphasized because I'm capable of making a conversation with these languages. The Spanish, Portuguese, German and Russian languages aren't emphasized because I'm still studying these languages. I'm improving in Spanish and I'm capable of a small Spanish conversation with natives. I'm studying with the help of Facebook groups(for learning Russian, German, Spanish and Portuguese), YouTube channels(<a href="https://www.youtube.com/c/russianpod101" target="_blank">RussianPod 101</a>, <a href="https://www.youtube.com/c/Germanpod101" target="_blank">GermanPod 101</a>, <a href="https://www.youtube.com/c/spanishpod101" target="_blank">SpanishPod 101</a>, <a href="https://www.youtube.com/c/portuguesepod101" target="_blank">PortuguesePod 101</a> and others), apps like <a href="https://play.google.com/store/apps/details?id=com.duolingo" target="_blank">Duolingo</a>, <a href="https://play.google.com/store/apps/details?id=com.ascendo.android.dictionary.de.free" target="_blank">English-German Dictionary</a>, <a href="https://play.google.com/store/apps/details?id=com.ascendo.android.dictionary.es.free" target="_blank">English-Spanish Dictionary</a>, <a href="https://play.google.com/store/apps/details?id=com.ascendo.android.dictionary.pt.free" target="_blank">English-Portuguese Dictionary</a>, <a href="https://play.google.com/store/apps/details?id=com.ufo.disease" target="_blank">Diseases Dictionary Free</a>(they have Russian, German, Spanish, Portuguese translations that I can look into for gathering words and look for its definitions), <a href="https://www.youtube.com/user/ParaLightWorX" target="_blank">ParaLight WorX</a>, <a href="https://www.youtube.com/c/Langfocus" target="_blank">Langfocus</a> and others.</p>
+                        <br/>
+                    <p>I'm looking forward to study other languages as well if I master somehow the languages mentioned in Others section of this Linguistic Skills, if God willing. It can be Chinese(more preferable, even just the basics and not the whole complexity), Japanese, Korean, etc. For now, I'm still improving and studying about the languages mentioned in the Others section.</p>
+                    </div>  
+                </div>
+         
+                <div id="tagalog">
+                        <br/>
+                    <div class="introLang">
+                    <p class="different">To learn a lot of languages is a crucial thing. By doing so, I can talk to a lot of people globally. Thus, making more potential interactions with people I didn't know before. Regardless of their races, I can cope up with them through their native languages respectively which I know to speak of. <span style="color: orange">☻</span> </p>     
+                    </div>    
+                        <br/>
+                    <p class="lInfo" title="History of Tagalog">About</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                    <p class="whatIs">About The Tagalog Language</p>
+                    <p>Tagalog is derived from the word "taga ilog" which means: living near the river. The initial speakers of Tagalog were living near the river. It's an Austronesian language of the Tagalog people.</p>
+                        <br/>
+                    <p>Learn More about Tagalog:</p>
+                    <a href="https://youtu.be/6dBREc8ePuk" target="_blank">Filipino - The National Language of the Philippines (Tagalog)</a>
+                        <br/>
+                    <a href="https://en.m.wikipedia.org/wiki/Tagalog_language" target="_blank">Tagalog Language</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="Speakers of Tagalog">Speakers</p>
+                    <div class="lInfoHolder">
+                     
+                    <div  class="lIHContent">
+                    <p class="whatIs">Spoken in:</p>
+                    <p>It's mainly spoken by native Filipinos in the Luzon region located at the Philippines especially at NCR. Some Filipinos outside of Luzon are also capable of speaking Tagalog so they're also included. It's safe to conclude that the majority of the Filipinos can speak Tagalog. </p>
+                        </div>
+                    </div>         
+                        <br/> 
+                    <p class="lInfo" title="My reason is...">Reason</p>
+                    <div class="lInfoHolder">
+                    <div class="lIHContent">
+                    <p class="different">As we know it, Tagalog is very prominent in the Philippines: the country that I love. It's spoken in all regions of the said country. Being able to speak so, means that I can speak to a lot of people all over the Philippines, which makes me understand them and likewise to me also.</p>    
+                    </div> 
+                        </div>
+                    <br/>
+                </div>
+                
+                <div id="visaya">
+                        <br/>
+                    <div class="introLang">
+                    <p class="different">To learn a lot of languages is a crucial thing. By doing so, I can talk to a lot of people globally. Thus, making more potential interactions with people I didn't know before. Regardless of their races, I can cope up with them through their native languages respectively which I know to speak of. <span style="color: orange">☻</span></p>
+                    </div>
+                        <br/>
+                    <p class="dia">Cebuano</p>
+                        <br/>
+                    <p class="lInfo" title="History of Cebuano">About</p>
+                    
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                    <p class="whatIs">About Cebuano</p>
+                    <p>The Cebuano language is referred mostly as Bisaya/Binisaya by the natives. It's spoken in the Central Visayas region but it can be found on other regions as well like in Mindanao and it's widely used.</p>
+                        <br/>
+                    <p>Learn more about Cebuano:</p>
+                    <a href="https://en.m.wikipedia/wiki/Cebuano_language" target="_blank">Cebuano Language</a>
+                        </div>
+                    </div>
+                        <br/> 
+                    <p class="lInfo" title="My reason is...">Reason</p>
+                    <div class="lInfoHolder">
+                     
+                    <p class="lIHContent">Cebuano as the name implies, spoken in Cebu. By the way, it's very prominent in Visayas and in Mindanao regions. This is my mother tongue. It's more preferable to refer it as Bisaya rather than Cebuano. Moreover, being able to speak such language will give me an advantage in speaking to those Filipinos who are struggling to speak Tagalog in the said regions. </p>
+                     
+                    </div>
+                        <br/>
+                        <hr/>
+                        <br/>
+                    <div>
+                    <p class="dia">Boholano</p>
+                        <br/>
+                    <p class="lInfo" title="History of Boholano">About</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                    <p class="whatIs">About Boholano</p>
+                    <p>Boholano is a variant of the Cebuano language(often referred as Bisaya/Binisaya) spoken in the island province of Bohol in the Visayas region.</p>
+                        <br/>
+                    <p>Learn more about the Boholano dialect:</p>
+                    <a href="https://en.m.wikipedia/wiki/Boholano_dialect" target="_blank">Boholano Dialect</a>
+                        </div>
+                    </div>
+                        <br/> 
+                    <p class="lInfo" title="My reason is...">Reason</p>
+                    <div class="lInfoHolder">
+                     
+                    <p class="lIHContent">I spent almost 6 years living on Bohol located at the Visayas region. When I was there, it's somehow hard to cope up with the natives there with a slightly different language to mine(Cebuano). I often misunderstood their words before and sometimes, very confusing on some words to decipher its definitions. As time went by, I finally understand some words which were complex for me before; thus understanding the dialect. </p>
+                    </div>
+                        <br/>
+                    </div>
+                </div>
+                
+                <div id="english">
+                        <br/>
+                    <div class="introLang">
+                    <p class="different">To learn a lot of languages is a crucial thing. By doing so, I can talk to a lot of people globally. Thus, making more potential interactions with people I didn't know before. Regardless of their races, I can cope up with them through their native languages respectively which I know to speak of. <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="dia">British English</p>
+                        <br/>
+                    <p class="lInfo" title="History of British English">About</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                    <p class="whatIs">About British English</p>    
+                    <p>The British English is spoken in the United Kingdom. It's the standard dialect of the English language.</p>
+                        <br/>
+                    <p>Learn more about the British English:</p>
+                    <a href="https://en.m.wikipedia/wiki/British_English" target="_blank">British English</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="My reason is...">Reason</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                        <p class="different"> There are some differences in American and British English. Although both of them is still English, there are differences in some things. So I decided to include it to be able to speak more in English. Besides, there are some variations in some countries that I might be eventually learning to, if God willing.</p>  
+                         </div>
+                    </div>
+                        <br/>
+                        <hr/>
+                        <br/>
+                    <div>
+                    <p class="dia">American English</p>
+                            <br/> 
+                    <p class="lInfo" title="History of American English">About</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                    <p class="whatIs">About American English</p>
+                    <p>The American English is spoken in the United States of America. It's one of the varieties of the English language. Currently, it's the most widely used form of English worldwide.</p>
+                        <br/>
+                    <p>Learn more about the American English:</p>
+                    <a href="https://en.m.wikipedia/wiki/American_English" target="_blank">American English</a>
+                        </div>
+                    </div>
+                        <br/> 
+                    <p class="lInfo" title="My reason is...">Reason</p>
+                    <div class="lInfoHolder">
+                        <div class="lIHContent">
+                            <p class="different">American English is so prominent globally so it's very crucial to learn this language. Besides, English are taught at Phillippine schools so learning it is a must to pass. I can speak to a lot of people as English is a prominent language and many know it.  </p>
+                        </div>
+                    </div>
+                        <br/>
+                    </div>
+                </div>
+                
+                <div id="others">
+                        <br/>
+                    <div class="introLang">
+                    <p class="different">To learn a lot of languages is a crucial thing. By doing so, I can talk to a lot of people globally. Thus, making more potential interactions with people I didn't know before. Regardless of their races, I can cope up with them through their native languages respectively which I know to speak of. <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="Spanish Language">Spanish</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContentOthers">
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">About Spanish:</p>
+                        <p>Spanish is a European language. Although it's spoken in Latin America, its origin is in Spain. It's quite long to summarize, so better check it out the things below. </p>
+                            <br/>
+                        <p>Learn more about the Spanish language:</p>
+                        <a href="https://youtu.be/NSfCDdTtBn0" target="_blank">The Spanish Language and What it Makes The Coolest</a>
+                            <br/>
+                        <a href="https://en.m.wikipedia.org/wiki/Spanish_language" target="_blank">Spanish Language</a>
+                    </div> 
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Spoken into:</p>
+                        <p>It's spoken is Spain wherein it's the origin. It's also spoken in some parts of Latin America. There are other places to consider wherein some people live and capable of speaking Spanish outside of the said places.</p>    
+                    </div>
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Reason:</p>
+                        <p>Spanish is one of the most spoken language globally. Being capable to speak so, will give me an advantage to talk to a lot of people. Anyway, I have a distant Spanish relative on my mother's side. As we know it, the Spaniards once colonized the Philippines before and some of them married native Filipinos. That's why I have a distant Spanish blood. As I do have such ancestry and as a respect to my distant Spanish ancestors, I'm willing to learn such language. <span class="takeNote" title="I want to learn the Spanish language.">Quiero aprender la idioma de español.</span></p> 
+                            </div>      
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="Portuguese Language">Portuguese</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContentOthers">
+                     <div class="lIHCOCon">
+                        <p class="lIHConCat">About Portuguese:</p>
+                        <p>Portuguese is a European language. Although it's also spoken in Brazil, the origin of Portuguese is from Portugal itself which is located in Europe.</p>
+                            <br/>
+                        <p>Learn more about the Portuguese language:</p> 
+                        <a href="https://youtu.be/Nur6WwpmyBo" target="_blank">The Portuguese Language and What it Makes Intriguing</a>
+                            <br/>
+                        <a href="https://en.m.wikipedia.org/wiki/Portuguese_language" target="_blank">Portuguese Language</a>
+                    </div> 
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Spoken into:</p>
+                        <p>It's spoken in Portugal and in Brazil. There are other places to consider wherein some people live and capable of speaking Portuguese outside of the said places.</p>  
+                    </div>
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Reason:</p>
+                        <p>I have a particular reason why I'd like to learn Portuguese in which I'll keep confidential. Besides, Spanish and Portuguese have some similarities. They basically like cousins in analogy. So I can easily learn that language if I understand Spanish well already and, plus a bonus of speaking to a lot of people as well.</p>      
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="Russian Language">Russian</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContentOthers">
+                     <div class="lIHCOCon">
+                        <p class="lIHConCat">About Russian:</p>
+                        <p>The Russian language is a Slavic language that is mainly spoken in Russia. Its alphabets is called Cyrillic. </p>
+                            <br/>
+                        <p>Learn more about the Russian language:</p>
+                        <a href="https://youtu.be/Y4cXIyyc-L0" target="_blank">The Russian Language</a>
+                            <br/>
+                        <a href="https://en.m.wikipedia.org/wiki/Russian_language" target="_blank">Russian Language</a>
+                    </div> 
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Spoken into:</p>
+                        <p>It's spoken mainly at Russia. Furthermore, it's also spoken in some former Soviet Union states like Ukraine, Belarus, Kazakhstan, etc. There are other places to consider wherein some people live and capable of speaking Russian outside of the said places.</p>    
+                    </div>
+                        <br/>
+                    <div class="lIHCOCon">
+                        
+                        <p class="lIHConCat">Reason:</p>
+                        <p>The Russian language is one of the most spoken languages globally. The <abbr title="Union of Soviet Socialist Republics">USSR</abbr><span class="abbr">Union of Soviet Socialist Republics</span> <span style="color: red; font-size: 1.50em">☭</span> which is dissolved in 1991, dispersed into 15 independent countries and some of them has a official language of: Russian of course. If I learn such language, I can speak to a lot of people not only in Russia, but also in other former <abbr title="Union of Soviet Socialist Republics">USSR</abbr><span class="abbr">Union of Soviet Socialist Republics</span> <span style="color: red; font-size: 1.50em">☭</span> states!</p>
+                            </div>  
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="German Language">German</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContentOthers">
+                     <div class="lIHCOCon">
+                        <p class="lIHConCat">About German:</p>
+                        <p>The German language is a European language that's spoken in Germany as the name implies.</p> 
+                            <br/>
+                        <p>Learn more about the German language:</p>
+                        <a href="https://youtu.be/K3IImGiiY1Q" target="_blank">The German Language</a>
+                            <br/>
+                        <a href="https://en.m.wikipedia.org/wiki/Languages_of_Germany" target="_blank">Languages of Germany</a>
+                    </div> 
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Spoken into:</p>
+                        <p>It's spoken in Germany. There are other places to consider wherein some people live and capable of speaking German outside of the said place.</p>    
+                    </div>
+                        <br/>
+                    <div class="lIHCOCon">
+                        <p class="lIHConCat">Reason:</p>
+                        <p>The German language isn't so prominent like the ones that I mentioned of. Anyway when I was listening to some German conversations, I'm amazed about their accent! I basically like their accent because it's cool to  hear of. I don't know if you like what I like about that language. Well, we have different preferences so it doesn't matter whether you like it or not.</p>    
+                            </div> 
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="lInfo" title="More Languages...">Languages</p>
+                    <div class="lInfoHolder">
+                     
+                    <div class="lIHContent">
+                        <p class="different">There are many languages out there. There's no need to learn all of them. But when I realize that I need to learn a particular language, then I must. I'm looking forward to learn other languages to enhance myself, if God willing. </p>
+                        </div>
+                    </div>
+                        <br/>
+                </div>
+            </div>
+        </div>
+        
+        <div id="scientificSkills">
+             
+            <p id="ssSkills">Scientific Skills ⚛ </p>
+              
+        </div>
+        
+        <!-- For navigating the SS skills division -->
+        <div id="ssShowerNav" class="showCon">
+            <ul>
+                <li title="Physics" id="cPhysics">Physics</li>
+                <li title="Biology" id="cBiology">Biology</li>
+                <li title="Microbiology" id="cMicrobiology">Microbiology</li>
+                <li title="Others..." id="cOthersSS">Others</li>
+            </ul>
+                
+            <div id="ssShowerCon">
+                
+                <div id="ssShower">
+                    <p id="showerSS">Introduction</p>
+                </div>
+                
+                <div id="ssSkillsForGen">
+                  
+                <div class="divForGens">
+                    <p class="divForGensTtle">Introduction on my Scientific Skills</p>
+                        <br/>
+                    <p>I like studying Science because it has a lot of real-life applications. This interest can lead for me to be a scientist but I opt to learn technology more because I have huge interest in technology. I encourage you to study about Science whatever the fields that you'll choose aside from studying about technology if you're an IT/CS, or whatsoever the course that you're taking in, study Science :) .</p>
+                        <br/>
+                    <p>I don't put a lot of time studying about Science compared to the time that I'm studying about technology. I watch some videos regarding about Science especially from these YouTube channels: <a href="https://www.youtube.com/c/SciShow" target="_blank">SciShow</a>, <a href="https://www.youtube.com/c/scishowspace" target="_blank">SciShow Space</a>, <a href="https://www.youtube.com/c/SciShowPsych" target="_blank">SciShow Psych</a>, <a href="https://www.youtube.com/teded" target="_blank">TED-Ed</a>, <a href="https://www.youtube.com/c/BRIGHTSIDEOFFICIAL" target="_blank">BRIGHT SIDE</a>, <a href="https://www.youtube.com/c/ScienceTime24" target="_blank">Science Time</a> and from other YouTube channels that have science-related contents. </p>
+                        <br/>
+                    <p>There are other branches that are not mentioned. I study on what I'm interested in. If I'm interested in an specific field, then I'll study even just the basics, and so on. I'm not saying that I'm very good at those branches, but I do posses somehow the fundamental knowledge about those branches. I want to improve my scientific skills if God willing, but my focus is more about technology.</p>
+                    </div>
+                </div>
+                
+                <div id="physicsSS">
+                        <br/>
+                    <div class="sIntro">
+                    <p class="different">Science is often involved on what's happening around us physically. Having a glimpse at this matter may mean an advantage. Besides, I don't want to be ignorant at this matter so I thrive in! <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="About Physics">About</p>
+                    <div class="sInfoHolder">
+                     
+                    <div class="sIHContent">
+                    <p class="whatIs">Definition:</p>
+                        <p>Physics is a science that deals with matter(solid, liquid and gas), energy and their interactions. It involves the physical processes and and phenomena of a specific system. It talks about the physical properties and composition of physical objects.</p>
+                            <br/>
+                        <p>Learn more about Physics:</p>
+                        <a href="https://youtu.be/yWMKYID5fr8" target="_blank">What is Physics?</a>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="History of Physics">History</p>
+                    <div class="sInfoHolder">
+                     
+                    <div class="sIHContent">
+                    <p class="whatIs">Physics' Brief History</p>
+                        <p>Physics' history might be too long to be written here. Better click the link below to learn more regarding to its history. :)</p>
+                            <br/>
+                        <p>Learn more about its history:</p>
+                        <a href="https://youtu.be/J6qtNLZIWd0" target="_blank">The history of Physics and Its Applications</a>
+                        <br/>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="My reason is...">Reason</p>
+                    <div class="sInfoHolder">
+                         
+                    <p class="sIHContent">Physics is very crucial on our daily lives. It'll explain to me on why do some things behave like that physically. Besides, it's very useful like building something that needs Physics. So I thrive in to have a grasp at this good subject.</p>  
+                    </div>
+                        <br/>
+                </div>
+                
+                <div id="biologySS">
+                        <br/>
+                    <div class="sIntro">
+                    <p class="different">Science is often involved on what's happening around us physically. Having a glimpse at this matter may mean an advantage. Besides, I don't want to be ignorant at this matter so I thrive in! <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="About Biology">About</p>
+                    <div class="sInfoHolder">
+                         
+                    <div class="sIHContent">
+                    <p class="whatIs">Definition:</p>
+                    <p>Biology is a branch of Science that deals with living organisms and its vital processes. It talks about the life processes of various organisms.</p>
+                        <br/>
+                    <p>Learn more about Biology:</p>
+                    <a href="https://youtu.be/6v8djXa-IPQ" target="_blank">What is Biology?</a>
+                        </div> 
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="History of Biology">History</p>
+                    <div class="sInfoHolder">
+                         
+                    <div class="sIHContent">
+                    <p class="whatIs">Biology's Brief History</p>    
+                    <p>Its history traces the study of the living things from ancient to modern times. Click the link before to learn more regarding to its history.</p>
+                        <br/>
+                    <p>Learn more about its history:</p>
+                    <a href="https://en.m.wikipedia.org/wiki/History_of_biology" target="_blank">History of Biology</a>
+                        </div>  
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="My reason is...">Reason</p>
+                    <div class="sInfoHolder">
+                    <div class="sIHContent">
+                    <p class="different">I'd like to study Biology as it pertains to living beings and that includes us humans. I just wanted to know about it.</p> 
+                    </div>
+                    </div>
+                        <br/>
+                </div>
+                
+                <div id="microbiologySS">
+                        <br/>
+                    <div class="sIntro">
+                    <p class="different">Science is often involved on what's happening around us physically. Having a glimpse at this matter may mean an advantage. Besides, I don't want to be ignorant at this matter so I thrive in! <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="About Microbiology">About</p>
+                    <div class="sInfoHolder">
+                         
+                    <div class="sIHContent">
+                    <p class="whatIs">Definition:</p>
+                    <p>Microbiology is a branch of Biology that deals with microscopic forms of life like pathogens: virus, bacteria, parasites, etc.</p>
+                        <br/>
+                    <p>Learn more about Microbiology:</p>
+                    <a href="https://en.m.wikipedia.org/wiki/Microbiology" target="_blank">Microbiology</a>
+                    </div>
+                         
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="History of Microbiology">History</p>
+                    <div class="sInfoHolder">
+                          
+                    <div class="sIHContent">
+                    <p class="whatIs">Microbiology's Brief History</p>
+                    <p>People before didn't had an awareness to microorganism's existence. It's quite to talk about it. Better check it out the link below:</p>
+                    <a href="https://youtu.be/2JdBH2tys6M" target="_blank"> Micro-Biology: Crash Course History of Science #24</a>    
+                        <br/>
+                    </div>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="My reason is...">Reason</p>
+                    <div class="sInfoHolder">
+                    <div class="sIHContent">
+                        <p class="different">Microbiology is an interesting thing to learn of. There are a lot of microorganisms out there lurking around whether harmful or harmless. Some pathogens pose threats, so understanding Microbiology might help me in avoiding such dangerous tiny little creatures. </p>     
+                        </div>
+                    </div>
+                        <br/>
+                </div>
+                
+                <div id="othersSS">
+                        <br/>
+                     <div class="sIntro">
+                    <p class="different">Science is often involved on what's happening around us physically. Having a glimpse at this matter may mean an advantage. Besides, I don't want to be ignorant at this matter so I thrive in! <span style="color: orange">☻</span> </p>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="Astronomy">Astronomy</p>
+                    <div class="sInfoHolder">
+                         
+                    <div class="sIHContentOthers">
+                    <div class="sIHCOCon">
+                    <p class="sIHConCat">About Astronomy:</p>
+                        <p>Astronomy is study of objects and matter that's found on outside of earth's atmosphere. It can be planets, comets, stars, etc. It studies about the objects and matter found outside of earth's atmosphere and their physical and chemical properties.</p> 
+                            <br/>
+                        <p>Learn more about Astronomy:</p>
+                        <a href="https://youtu.be/-FYvy3_egHw" target="_blank">The New Astronomy: Crash Course History of Science #13 </a>
+                    </div>
+                        <br/>
+                    <div class="sIHCOCon">
+                        
+                        <p class="sIHConCat">Reason: </p>
+                        <p>I marvel at the beauty of space. But let's be honest, some parts of the universe are hostile to go into. Anyway, it's good to see how beautiful the things that God created in the universe. How much more if I understand some parts of it? Completely a good thing! If an atheist is reading this, don't convince me that God doesn't exist because I believe in the existence of God. Just keep your beliefs there and I'll keep mine over here. <span style="color: #8b2b00; font-size: 1.25em">⚑</span> Well, if you insist in your disbelief then I'm open for a scientific debate to prove the existence of God.</p>    
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    
+                    <p class="sInfo" title="Chemistry">Chemistry</p>
+                    <div class="sInfoHolder">
+                        
+                    <div class="sIHContentOthers">
+                    <div class="sIHCOCon">
+                        
+                    <p class="sIHConCat">About Chemistry:</p>
+                        <p>Chemistry deals with various composition, structure, properties o substances, etc. of various chemicals. It also deals with the chemical reaction of such things and with the transformations that they undergo.</p> 
+                            <br/>
+                        <p>Learn more about Chemistry:</p>
+                        <a href="https://youtu.be/t8x3wdXZGEY" target="_blank">What is Chemistry?</a>
+                            <br/>
+                        <a href="https://youtu.be/P3RXtoYCW4M" target="_blank">The Map of Chemistry</a>
+                    </div>
+                        <br/>
+                    <div class="sIHCOCon">
+                        
+                    <p class="sIHConCat">Reason:</p>
+                        <p>I need to study such thing as I might need a chemical reaction in building something, if God willing. </p>  
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="Human Anatomy">Anatomy</p>
+                    <div class="sInfoHolder">
+                        
+                    <div class="sIHContentOthers">
+                    <div class="sIHCOCon">
+                    <p class="sIHConCat">About Anatomy:</p>
+                        <p>Anatomy talks about the body parts of a living being like humans or animals. It's a branch of Morphology that deals with the structure of various organisms and in my case, I'm studying about human anatomy.</p>
+                            <br/>
+                        <p>Learn more about Human Anatomy:</p>
+                        <a href="https://youtu.be/3FX07HzYyqI" target="_blank"> The New Anatomy: Crash Course History of Science #15</a>
+                    </div>
+                        <br/>
+                    <div class="sIHCOCon">
+                        <p class="sIHConCat">Reason:</p>
+                        <p>Having a grasp on what's inside your body is very crucial. So I study human anatomy to be able to understand how some organs work, how to make them healthy and what it makes them to be not functioning well.</p> 
+                            </div>      
+                        </div>
+                    </div>
+                        <br/>
+                    <p class="sInfo" title="Scientific Fields">Others</p>
+                    <div class="sInfoHolder">
+                         
+                    <div  class="sIHContent">
+                        <p class="different">Those that are mentioned here don't mean that they're the only ones that I'm studying with. I'm open to study some fields in Science that eventually, I might realize that I need to. Whether what field it may be, if I need it then I'm interested at such matter <span style="color: orange">☻</span>. </p>
+                        </div>
+                    </div>
+                        <br/>
+                </div> 
+            </div>
+        </div>
+        
+        <br/> <br/> 
+        
+    </div><!--For skills-->
+
+    <div class="hide" id="contact">
+        <p id="myContact">How to contact the Developer?</p>
+        <hr/>
+        
+        <div id="contactPic">
+                <br/>  
+            <div id="contactSection">
+                <div id="imageCon">
+                <img src="ArabicVersion.jpg" width="100%" max-height="170px" alt="Ricson"/>
+                </div>
+  
+                <p id="contactName">Ricson B. Escalicas</p>
+                <p id="conMessage"><q>If you would like to contact me, feel free to do so.</q></p>
+                    <br/> <br/>
+                <div id="conChoices">
+                    <br/> <br/>
+                <p id="conFbP">Facebook Page: <a href="https://www.facebook.com/Hermano-Ricson-Escalicas-1109011380608647" target="_blank" title="This is what I recommend the most for contacting me.">@Hermano Ricson Escalicas</a> </p>
+                    <br/>
+                <p id="conSlP">SoloLearn Account: <a href="https://www.sololearn.com/Profile/13284107/?ref=app" target="_blank" title="If you have a SoloLearn Account, better click this.">@Ricson B. Escalicas</a> </p>
+                    <br/>
+                <p id="conGP">GitHub Account: <a href="https://www.github.com/apassionatestudent" target="_blank" title="If you have a GitHub Account, better click this.">@apassionatestudent</a> </p>
+                    <br/>  <br/>
+                </div>
+                    <br/> <br/> 
+            </div>
+                <br/>  
+        </div>
+    </div>
+        
+</div><!--for .main--> 
+    
+</div><!--for #theMain-->
+    
+    <div id="error">
+        <!-- This will show if you didn't finish up the whole process since I'll disappear the main section when you open the menu. This isn't actually cool and I'll replace it if God willing if this website becomes a dynamic one.-->
+        <br/> <br/>
+        <p>⚠ Error! </p>
+        <p>An error has occurred. You should let it finish before closing it. To fix this error, you should let it finish before closing it. Okay?</p>
+        <p>I already expected that visitors will do such so I need to create this one as well. Don't be so excited my dear visitor. ;) </p>
+        <br/> <br/>
+        <!--I need to disappear the main because 2 scroll bars will appear if the menu is too long. This isn't cool but I need to do it because I don't want to separate the menu from the rest of the document. If I'll make this a dynamic website, I'll make changes in the menu and separate it from the rest of the document. -->
+    </div>
+
+    <script src="app.js"></script>
+    <noscript>I'm sorry, JavaScript isn't supported by your browser. It's probably disabled, better check it out to resolve current issue/s.</noscript>
+    
+</body>
+
+    <!--
+        I'm sorry if you don't like my repetitions about, "...if God willing...". It's just a matter of my spiritual belief. I'll provide a detailed explanation why I often said so. If you're an atheist, then don't mind it.
+
+        Kawikaan 27:1 (TAB)
+            Huwag mong ipaghambog ang kinabukasan; Sapagkat hindi mo nalalaman kung ano ang ilalabas ng ibang araw.
+
+        Santiago 4:13-15 (TAB)
+            Magsiparito ngayon, kayong nagsisipagsabi, Ngayon o bukas ay magsisiparoon kami sa gayong bayan, at titira kami doong isang taon, at mangangalakal, at magtutubo:
+            Kayo ngang hindi nakakaalam ng mangyayari bukas. Ano ang inyong buhay? Kayo nga'y isang singaw na sa sangdaling panahon ay lumilitaw, at pagdaka'y napapawi.
+            Sapagka't and dapat ninyong sabihin ay, Kung loloobin ng Panginoon ay mangabubuhay kami, at gagawin namit ito o yaon.
+
+        As stated in those verses whenever we say about the future like planning, as a Christian it's not good to say about it like I know everything; so therefore, it should be accompanied by: if God willing. Look at the verse James 4:15 that says so. I'm not sure what's going at the future so I better use such words. Any future plans depict such phrase regardless if it's not written therein. If you're an atheist, don't mind this one. I believe in the existence of God. If you insist in yours, well I'm open(if I'm not busy) for a scientific debate to prove His existence.
+        
+
+        I would like to know more people who are passionate about technology and collaborate with them, to improve and prepare ourselves for the industry ahead, if God willing.
+
+        I would like to improve this mere project from static to dynamic, if God willing.
+    -->
+ 
+</html>

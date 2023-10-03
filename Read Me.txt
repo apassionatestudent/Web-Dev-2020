@@ -1,0 +1,39 @@
+This mere project was made with the intention to test my skills. I know that it's not
+much but I'm willing to improve this one eventually, if God willing. I've started my
+hectic self-study since February 2019(16 y/o and Grade 10) and before that, I really
+had no any backgrounds about this field. Learning for me isn't enough, I need to test 
+my mere skills to see if I'm capable somehow to come up with something from my
+self-study and I did with this one. I'm looking forward to improve my skills and learn
+more as I prepare myself for the college ahead, if God willing.
+
+I started creating this from October 24, 2019. This project of mine is delayed 
+due to some factors. When November 2019 to March 2020 (under 2nd sem') came, it's 
+the months that I was very busy at minor subjects in our Grade 11. Research from 
+two subjects  were the hectic ones and a lot of dealines from various projects, 
+making a short film, etc. Furthermore, my computer was not functioning to due its 
+faulty power supply. It took very long from February to April 2020 until its old 
+power supply is replaced which further delayed the overall progress of my mere website. 
+I continued at May 8 because my computer wasn't set up due to space issues. My 
+desktop computer isn't fitted with Wireless Network Interface Card nor NIC, which I 
+don't have an internet access which delayed it further. This crap COVID-19 further 
+delayed the completeness of this project. My desktop computer doesn't have an internet 
+connection so I went to computer cafes with my USB to gather the necesarry things I need, 
+but COVID-19 came which hinders me to do so.
+
+For now, it will be just a static website. I can't make it with a dynamic one because 
+of this crap COVID-19. I'll love on focusing to make it a dynamic website if I have a 
+sponsor to upload my website to the internet which is possible because someone expressed 
+it and when COVID-19 is gone, if God willing. What I mean on it is, like updating its 
+context without medling with the source code and it will have its own administrator 
+section. I'm not saying that I'm very capable on doing so but I'm willing  to take 
+such coding challenge to better test my skills and further improve myself as a 
+beginner. If I finished it as a dynamic one, I'm willing to share my work with
+other students to play with it and to learn from it just like I share this static
+version. 
+
+Any critisms on my code are welcome to better improve my coding performance even
+more. I'd like to see your ratings as well if you're satisfied on my project. I'm
+looking forward to seek new friends which I have the same interests and passion.
+
+-Hermano Ricson Escalicas :)
+ 

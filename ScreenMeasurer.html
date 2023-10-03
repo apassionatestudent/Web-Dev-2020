@@ -1,0 +1,99 @@
+    <!--
+        Created by: Ricson B. Escalicas
+
+        I'd like to share my tool in coming up with the right pixels for my @media queries on my CSS. I might use some CSS framework to be more efficient, but I like something more challenging to better test my skill. As I said, my project is a tool of testing my capabilities and see if I'm able to do something quite challenging. That's probably how I improve myself.
+    -->
+
+<!DOCTYPE html>
+
+    <html>
+        <head>
+            <title>Screen Measurer!</title>
+            
+            <style>
+                
+                body {
+                    background-color: #333333;
+                    color: #fff;
+                }
+                
+                h1 {
+                    text-align: center;
+                    font-size: 40px;
+                    color: chocolate;
+                    border: 2px solid #fff;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+
+                #button {
+                    background-color: #ff7600;
+                    color: #fdfdfd;
+                    text-align: center;
+                    padding: 15px;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 50%;
+                }
+
+                #button:hover {
+                    background: #ff4f01; transition: 1s;
+                }
+                
+                #width, #height {
+                    text-align: center;
+                    color: #ff4f01;
+                }
+                
+                #message {
+                    display: none;
+                    margin: 0 auto;
+                    color: #ff7600;
+                    border: 2px solid chocolate;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+                
+                @media screen and (max-width: 575px) {
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+                
+            </style>
+        </head>
+
+        <body>
+            <h1>Screen's width and height</h1>
+             
+            <div id="button" title="Measure screen width and height">
+                <p>Start Measuring the Screen</p>
+            </div> 
+            
+            <p id="width"></p>
+            <p id="height"></p>
+            
+            <br/> <br/> 
+            
+            <p id="message">This is good when measuring your screen and lower like resizing the browser window to see how many pixels it covers. It's good for determing the proper pixels to use in @media queries in CSS. Higher than that(like higher than your actual full screen's width and height) aren't included.</p>
+
+            <script>
+                var btn = document.getElementById("button");
+                var width = document.getElementById("width");
+                var height = document.getElementById("height");
+
+                // I can use the function measure() for simplicity instead of this one but this is for the sake of the beginners like me to introduce this way of calling a function. :)
+                    btn.onclick = function() {  
+                        this.innerHTML = "Measuring the screen...";
+                        
+                        var timer = setInterval(avto, 100);
+                        function avto() {
+                            width.innerHTML = "Screen\'s current width: " + window.innerWidth + "px";
+                            height.innerHTML = "Screen\'s current height: " + window.innerHeight + "px";
+                            document.getElementById("message").style.display = "block"; 
+                        }
+                    }
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,2171 @@
+/*
+    Designed by Ricson B. Escalicas.
+    I'm not really good at designing so I'm sorry if you don't like my simple mere design. I'm looking forward to improve my designing skills even more. :)
+    
+    Most of the document is designed from scratch.
+*/
+
+/* Document General Usage Starts */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is to make the selection look red in text color rather than the default(white text with bluish background) */
+::-moz-selection {
+    color: #ff0000; background-color: #fff;
+}
+::selection {
+    color: #ff0000; background-color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    transition: .5s;
+    background-color: #1a1a1a;
+}
+
+/* This is to depict an error. It's not permanent, it's just a temporary thing in the documentation and will probably be removed eventually as the project have changes in the future if God willing */
+#error {
+    margin-top: 30%;
+    margin-bottom: 10%;
+    display: none;
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    background-color: #0c1115;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: #fa0000;
+    position: relative;
+    z-index: 1;
+}
+
+#main { 
+    position: absolute; 
+    margin-top: 37px;
+    display: block;
+    width: 100%;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+#goUp, #goUp1, #goUp2, #goUp3 {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 5%;
+    border: none;
+    right: 5%;
+    outline: none;
+    z-index: 2;
+    text-align: center;
+    color: #ed8900;
+    background-color: #211f1c;
+    background-image: url(button.png);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    padding: 0 auto;
+}
+
+#goUp {
+    box-shadow: 0px 0px 0px 1px #fff;
+}
+#goUp:hover{
+    box-shadow: 0px 0px 20px 1px #fd3a00;
+    transform: rotate(-90deg);
+} 
+#goUp1:hover, #goUp2:hover, #goUp3:hover {
+    box-shadow: 0px 0px 10px 3px #ff511c;
+    transform: rotate(-90deg);
+}
+
+#goUp:active, #goUp1:active, #goUp2:active, #goUp3:active {
+    background-image: url(button2.png);
+    box-shadow: -30px 0px 20px 1px #e20707;
+    transition: 0s;
+    border: 1px solid rgb(224, 9, 9);
+}
+
+#goUp1, #goUp2, #goUp3 {
+    display: none;
+    border: 1px solid rgb(224, 52, 9);
+}
+#goUp1.show, #goUp2.show, #goUp3.show {
+    display: block;
+}
+
+.abbr {
+    display: none;
+    color: #ff8900;
+}
+
+.important {
+    color: #ff3100;
+    font-size: 1.25em;
+}
+
+abbr {
+    color: #ffa700;
+}
+
+/* Document General Usage Ends */
+
+/* Navigation and Menu Starts */
+.navigation {
+    background-color: #333333;
+    text-align:right;
+    width:100%;
+    position: fixed;
+    z-index: 30;
+    display: block;
+}
+
+.navigation ul li {
+    padding: 10px 15px;
+    list-style-type: none; 
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+}
+ 
+#clickHome:hover, #clickAbout:hover, #clickSkills:hover, #clickContact:hover {
+    background-color: #101010;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+#clickHome.active, #clickAbout.active, #clickSkills.active, #clickContact.active {
+    background-color: #212121;
+    color: #ff5d07;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#menu {
+    float: left;
+    color: white;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+#menu:hover {
+    color:  #ff003b;
+    cursor: pointer; 
+    background-color: #212121;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.menuNav {
+    display: none;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transition: 0.5s; 
+    background-color: #121212;
+}
+
+.menuNav .menuNavLists {
+    font-family: "Lato", sans-serif;
+    color: darkorange;
+    display: inline-block;
+    transition: 0.3s;
+    float: right;
+}
+
+.menuNav li a {
+    text-decoration: none;
+    color: darkorange;
+}
+ .menuNavLists:hover, .menuNavLists:focus, .offcanvas a:focus{
+    color: #000;
+    background-color: #e68a00;
+    cursor: pointer;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.menuNav ul li#closebtn:hover {
+    background-color: #d00000;
+    color: #ffffff;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+    text-shadow: 2px 2px #5d0000, -1px -1px #5d0000;
+}
+.menuNav ul li#closebtn {
+    font-family:arial;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    float: left;
+    color: darkorange;
+}
+
+#menuSays {
+    font-size: 1.25em;
+    color: #ff3100;
+    text-shadow: 1px 1px #892000;
+}
+
+#defaultMenuShow {
+    margin: 0 auto;
+    background-color: #272727;
+    color: #fff;
+    padding: 10px;
+    max-width: 80%;
+    max-height: 480px;
+    box-shadow:  0 4px 8px 0 rgba(10, 10, 10, 0.8), 0 6px 20px 0 rgba(10, 10, 10, 0.8);
+    overflow-y: hidden;
+    border-top: 4px solid #00468d;
+    border-bottom: 4px solid #843104;
+}
+
+#defaultMenuShow:hover {
+    overflow-y: scroll;
+}
+
+#congratulate {
+    color: #ffc;
+    border: 2px solid #032aff;
+    text-align: center;
+    font-family: monospace;
+    padding: 10px;
+}
+
+#visit.active, #services.active, #support.active, #help.active {
+    color: #ff2700;
+    background-color: #1f1b1a;
+    box-shadow:  0 4px 8px 0 rgba(31, 27, 26, 0.9), 0 6px 20px 0 rgba(31, 27, 26, 0.6);
+}
+
+#aboutWeb.active {
+    color: #31ff00;
+    background-color: #101010;
+    font-family: "Courier New";
+}
+
+#aboutWeb {
+    margin-right: 14px;
+}
+
+#forAboutWeb {
+    width: 100%;
+    background-color: #121212;
+    color: #ccc;
+    font-family: "Courier New";
+}
+
+#abthw {
+    color: #0aff00;
+    font-size:2em;
+    font-family: "Courier New";
+    padding: 5px;
+    background-color: #151515;
+    border-bottom: 2px solid #3bff00;
+    margin-top:36px;
+}
+
+.aboutDiv {
+    border: 1px solid #10d100;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+.aboutDiv ul li {
+    font-family:  "Courier New";
+    color: #ccc;
+    list-style-type: disc;
+}
+
+.aboutDivTtle {
+    text-align: center;
+    margin: 0 auto;
+    color: #58ff00;
+    background-color: #050505;
+    border-bottom: 1px solid #31ff00;
+    padding: 10px;
+    font-family: "Courier New";
+}
+
+.impAbout {
+    color: #3aa800;
+    font-family: "Courier New";
+}
+
+/* Menu responsiveness starts */
+
+@media screen and (max-width: 586px) {
+    
+    #menuSays {
+        font-size: 20px;
+    }
+    
+    #congratulate {
+        font-size: 13px;
+    }
+    
+    #navMenu ul li {
+        font-size: 11px;
+    }
+    
+    #defaultMenuShow, .introductory, .options {
+        max-width: 90%;
+        font-size: 15px;
+    }
+    
+    #aboutDivTtle, #abthw {
+        font-size: 15px;
+    }
+    
+    .aboutDiv {
+        font-size: 14px;
+    }
+} 
+
+/* Menu responsiveness ends */
+
+#upNav {
+    position: relative;
+    transition: 0.5s;
+    background-image: url(distantGalaxies.png); 
+    background-position: center;
+    background-size: cover;
+    background-color: #ff6200;
+    width: 100%;
+    height: 0;
+    z-index: 20;
+    top: 0;
+    position: fixed;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+#upNavMenu {
+    color: #ccc;
+    text-shadow: 3px 2px #151515;
+    font-size:2em;
+    font-family: Arial, Helvetica, sans-serifl; 
+    padding: 5px;
+    background-color: #262626;
+    border-bottom: 2px solid #000;
+    margin-top:34px;
+}
+
+.introductory {
+    color: #ccc;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+    background: #121212;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.97), 0 6px 20px 0 rgba(0, 0, 0, 0.97);
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ff4e00; border-bottom: none;
+}
+
+.options {
+    margin: 0 auto;
+    max-height: auto;
+    max-width: 90%;
+    color: #fff;
+    background-color: #161d24;
+    padding: 10px;
+    border-left: 3px solid #ff6200;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.97), 0 6px 20px 0 rgba(0, 0, 0, 0.97);
+}
+
+.optionSelect {
+    padding: 10px;
+    margin: 7px 3px 7px 3px;
+    cursor: pointer;
+}
+
+.optionSelect:hover {
+    background-color: #2a2020;
+    color: #db4c00;
+    box-shadow:  0 4px 8px 0 rgba(42, 32, 32, 0.9), 0 6px 20px 0 rgba(42, 32, 32, 0.9);
+    transition: 0.3s;
+    text-shadow: 2px 2px #4a1700;
+}
+
+.optionSelect.active {
+    background-color: #2a2020;
+    color: #db4c00;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.showOptionS {
+    border: 2px solid #2a2020;
+    border-top: none;
+    padding: 10px;
+    display: none;
+    margin: 3px;
+    margin-top: none;
+}
+
+.showOptionS a {
+    color: #009d9d;
+    text-decoration: none;
+}
+
+.showOptionS a:hover {
+    color: #800000;
+    transition: 0.5s;
+    background-color: #dedede;
+}
+
+.showOptionS.show {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+/* Navigation and Menu Ends */
+
+/* HOME DIVISION OF CSS BEGINS */
+
+#homeIntro { 
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(newLines.png);
+    width: 100%;
+    height: auto;
+    display: table;
+    background-attachment: fixed;
+}
+
+#nameIntro {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 18%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px #efefef;
+    color: #262626;
+    font-size: 23px;
+    padding: 5px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 1s;
+    text-align: center;
+}
+
+#nameIntro2 {
+    display: none;
+}
+
+#descriptions {
+    color: rgb(228, 50, 6);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(179, 12, 0);
+    border-top: none;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 35%;
+    margin-top: 5px;
+    margin-bottom: 20%;
+    backface-visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+#homeAbout {
+    width:  100%;
+    height:  100%;
+    background-color:#1a1a1a;
+}
+
+#authorSaid {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101010;
+    max-width: 70%;
+    color: #fff;
+    padding: 10px;
+    box-shadow:  0 4px 8px 0 rgba(26, 26, 26, 0.9), 0 6px 20px 0 rgba(26, 26, 26, 0.7);
+    transition: 0.5s;
+}
+
+#ricsonSays {
+    font-size: 1.50em;
+    color: #d64a0c;
+}
+
+#copyright {
+    margin: 0 auto;
+    font-family: monospace;
+    color: #ff4141;
+    text-align: center;
+    background-color:  #101010;
+    box-shadow:  0 4px 8px 0 rgba(26, 26, 26, 0.9), 0 6px 20px 0 rgba(26, 26, 26, 0.7);
+    max-width: 70%;
+    padding: 10px;
+    font-size: 1.25em;
+    transition: 0.5s;
+}
+
+/* Media Queries for Home starts! */
+
+@media screen and (max-width: 700px) {
+    #nameIntro, #descriptions {
+        max-width: 98%;
+    }
+    
+    #authorSaid, #copyright {
+        max-width: 95%;
+    }
+}
+
+@media screen and (min-height: 553px) {
+    
+}
+ 
+@media screen and (max-width: 1113px) {
+    #nameIntro, #descriptions {
+        max-width: 95%;
+    }
+    
+    #authorSaid, #copyright {
+        max-width: 87%;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    #clickHome, #clickAbout, #clickSkills, #clickContact {
+        font-size: 12px;
+    }
+    
+    #menu {
+        font-size: 12px;
+    }
+    
+    #main {
+        margin-top: 33px;
+    }
+    
+    #homeIntro {
+        background-image: url(newLines.png);
+    }
+    
+    .optionSelect.active {
+        text-align: center;
+    }
+    
+    #nameIntro {
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-top: 45%;
+        font-size: 15px;
+        max-width: 95%;
+        border-radius: 5px;
+    }
+    #nameIntro1 {
+        display: none;
+    }
+    #nameIntro2 {
+        display: block;
+    }
+    #descriptions {
+        margin-bottom: 45%;
+        max-width: 95%;
+    }
+    
+    #authorSaid #ricsonSays {
+        font-size: 16px;
+    }
+    
+    #authorSaid p {
+        font-size: 14px;
+    }
+    
+    #copyright {
+        font-size: 12px;
+    }
+}
+ 
+/* Media Queries for Home Ends */
+
+/* HOME DIVISION OF CSS ENDS */
+
+/* ABOUT DIVISION OF CSS BEGINS */
+#about {
+    background-color:#1a1a1a;
+    height: 100%;
+    width: 100%;
+}
+
+.coverPicture {
+    width: 85%;
+    min-height:100px;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 0.5%;
+    display: block;
+    cursor: pointer;
+}
+
+#coverPicture2 {
+    display: none;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 3px;
+    width: 95%;
+    border: 2px solid #692c00;
+    background-image: url(EatingLugaw.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+#coverPicture2 img {
+    border: 1px solid #ff4e00;
+    border-radius: 5px;
+    width: 28%;
+    height: 33%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7%; margin-bottom: 1%;
+}
+
+#nameAbout {
+    color: #ff6c00;
+    text-shadow: 1px 1px 5px #fd3100;
+    background-color: #171515;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 95%;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    border: 2px solid #ff3808;
+    padding: 5px;
+    display: none;
+}
+
+#aboutNavigation {
+    margin: 0 auto;
+    width: 85%;
+    color: #fff;
+    background-color:  #333333;
+    text-align: right;
+}
+
+#aboutNavigation ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+#aboutNavigation ul li:hover {
+    color: #ff5800;
+    background-color: #1c1c1c;
+    transition: 0.5s;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#general.active {
+    color: #fff;
+    background-color: #ff4500;
+}
+
+#aboutNavigation ul li.active {
+    color: #ff5618;
+    background-color: #391e0f;
+    box-shadow:  0 4px 8px 0 rgba(58, 29, 11, 0.9), 0 6px 20px 0 rgba(58, 29, 11, 0.9);
+}
+
+#theShower {
+    border-radius: 10px 10px 0px 0px;
+    margin: 0 auto;
+    width: 85%;
+    height: 5%;
+    color: #e68a00;
+    background-color: #404040;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #7b7b7b; border-left: 1px solid #7b7b7b;
+} 
+
+#theShowerP {
+    padding: 8px 0 8px 10px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#downNavigation {
+    margin-bottom: 15%;
+    padding: 10px; 
+    text-align: center;
+    background-color: #2c2726;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.8), 0 6px 20px 0 rgba(10, 10, 10, 0.7);
+}
+
+#downNavigation p {
+    padding: 10px;
+    color: #ff6c00;
+    background-color: #121212;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    display: inline;
+    margin: 0 auto;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.34), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+#forAbout, #forPhotos, #forHobbies {
+    display: none;
+}
+
+#forGeneral, #forAbout, #forPhotos, #forHobbies {
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 85%;
+    background-color: #262626 ;
+    color: #fff; 
+    box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.8), 0 6px 20px 0 rgba(7, 7, 7, 0.7);
+    border-left: 1px solid #3b3b3b;
+}
+
+/* For About/General Section */
+#forGenInt {
+    color: #d64a0c;
+    background-color: #121212;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.34), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+.posts {
+    padding: 10px;
+    margin: 5px;
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.posts:hover  {
+    padding-left: 55%;
+    transition: 0.5s;
+    color: #d64a0c;
+    box-shadow: 0 4px 8px 0 rgba(255, 56, 20, 0.34), 0 6px 20px 0 rgba(255, 69, 0, 0.24);
+}
+
+.posts.active {
+    padding-left: 55%;
+    color: #d64a0c;
+    box-shadow: none;
+}
+/* For Light(Orange) Reflection Mechanism */
+.posts.onReflect {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post1:hover ~ div#post2 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post2:hover ~ #post3, #post2:active ~ #post3 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post3:hover ~ #post4, #post3:active ~ #post4 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post4:hover ~ #post5, #post4:active ~ #post5 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post5:hover ~ #post6, #post5:active ~ #post6 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+#post6:hover ~ #post7, #post6:active ~ #post7 {
+    border-top: 1px solid #ff3100;
+    border-left: 1px solid #672000; border-right: 1px solid #672000;
+}
+
+.postsContent {
+    margin: 5px;
+    display: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #292a2c;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0f0f0f;
+    border-top: none;
+    box-shadow: 0 4px 8px 0 rgba(255, 69, 0, 0.33), 0 6px 20px 0 rgba(255, 69, 0, 0.33);
+}
+
+.postsContent.show {
+    display: block;
+}
+
+/* For About/About Section */
+.divAbout{
+    margin: 0 auto;
+    width: 98%;
+    padding: 10px;
+    color: #fff;
+    background-color: #121212;
+    box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.8), 0 6px 20px 0 rgba(19, 19, 19, 0.8);
+    border-top: 1px solid #ef6e00; border-left:  1px solid #ef6e00;
+}
+
+.classAbout {
+    font-size: 1.50em;
+    color: #fc4603;
+    padding: 4px;
+    margin: 3px;
+}
+
+.ifCp {
+    display: none;
+}
+
+.mottoes {
+    padding: 7px;
+    background-color: #0e0d0d;
+    border: 1px solid #ff6c00;
+    border-radius: 5px;
+    color: #ccc;
+    margin: 7px;
+    text-align: center;
+}
+
+#pageFB {
+    color: #e68a00;
+    text-decoration: none;
+    transition: 1s;
+}
+#pageFB:hover {
+    color: #ff4500;
+}
+
+.forAboutCat {
+    color: #e68a24;
+}
+.aboutWarnings {
+    color: rgb(209, 34, 34);
+    font-weight: 700;
+}
+
+/*For About/Photos */
+.photosCaps {
+    margin: 3px;
+    font-size: 1.25em;
+    color: #ffa700;
+    border-bottom: 2px solid #fd3100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photos {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8; filter: alpha(opacity=80); 
+    text-align: center;
+    max-width: 19.5%;
+}
+
+.photos:hover {
+    opacity: 1; filter: alpha(opacity=100);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    display: none;  
+    position: fixed;  
+    z-index: 100;  
+    padding-top: 100px;  
+    left: 0;
+    top: 0;
+    width: 100%;  
+    height: 100%;  
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);  
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    width: 500px;
+}
+#caption {
+    background-color: #1c1c22;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    width: 30%;
+    text-align: center;
+    color: #ff4500;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#close:hover, #close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* For About/Hobbies */
+#forHobbiesIntro {
+    margin: 0 auto;
+    width: 98%;
+    background-color: #121212;
+    padding: 10px;
+    color: #d64a0c;
+    font-size: 1.25em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.34), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hobbiesDiv {
+    padding: 7px;
+    border: 1px solid #5a5a5a;
+    border-radius: 7px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.hobbiesExp {
+    padding: 5px;
+    background-color: #141414;
+    color: #ccc;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #a5a5a5;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    border-bottom: none; border-right: none;
+}
+
+.forHobbiesTtle {
+    color: #ff4500;
+    background-color: #111111;
+    border: 1px solid #ff3b00;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.25em;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.forStudy, .forCoffee, .forPre {
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.34), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+.forStudy {
+    color: #ccc;
+    background-color:  #d93b00;
+}
+
+.forCoffee {
+    color: #ef4900;
+    background-color: #391e0f;
+}
+
+.forPre {
+    color: #59a742;
+    background-color: #042e00;
+}
+
+.branchSci {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    color: #fff;
+    background-color: #195300;
+    cursor: pointer;
+    max-width: 50%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.branchSci:hover {
+    color: #008d09;
+    background-color: #062408;
+    transition: 0.7s;
+    max-width: 100%;
+    border-right: 3px solid #14ff00;
+    border-left: 3px solid #14ff00;
+}
+
+.branchSci.active {
+    color: #08d800;
+    background-color: #171515;
+    transition: 1s;
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #08d800;
+}
+
+.branchSci.active:hover {
+    border-right: none;
+    border-left: none;
+}
+
+.branchSciShow {
+    display: none;
+    border: 1px solid #ff4500;
+    border-radius: 0 0 15px 15px;
+    padding: 5px;
+    border-top: none;
+    background-color: #121212;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.branchSciShow.show {
+    display: block;
+}
+
+.linguisticClick {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #195300;
+    cursor: pointer;
+    max-width: 50%;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.linguisticClick:hover {
+    color: #008d09;
+    background-color: #062408;
+    transition: 0.7s;  
+    max-width: 100%;
+    border-right: 3px solid #14ff00;
+    border-left: 3px solid #14ff00;
+}
+
+.linguisticClick.active {
+    color: #08d800;
+    background-color: #171515;
+    transition: 1s;
+    max-width: 100%;
+    border-radius: 7px 7px 0 0;
+    border-bottom: 1px solid #08d800;
+}
+
+.linguisticClick.active:hover {
+    border-right: none;
+    border-left: none;
+}
+
+#deutsch, #portugues, #russiaN, #espanol {
+    display: none;
+}
+#deutsch.show, #portugues.show, #russiaN.show, #espanol.show {
+    display: inline;
+}
+#lc1.hide, #lc2.hide, #lc3.hide, lc4.hide {
+    display: none;
+}
+
+.linguisticShow {
+    display: none;
+    border: 1px solid #ff4500;
+    border-radius: 0 0 7px 7px;
+    padding: 5px;
+    border-top: none;
+    background-color: #121212;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.linguisticShow.show {
+    display: block;
+}
+
+/* Media Queries for About starts! */
+
+@media screen and (max-width: 1124px) {
+    #goUp, #goUp1, #goUp2, #goUp3 {
+        width: 50px; 
+        height: 50px;
+        right: 2%; bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+          
+    .coverPicture, #nameAbout, #aboutNavigation, #downNavigation, #theShower, #forGeneral, #forAbout, #forPhotos, #forHobbies {
+        width: 95%;
+    }
+    
+    .modal-content {
+        max-width: 350px;
+    }
+    
+    #caption {
+        width: 55%;    
+    }
+}
+
+@media screen and (max-width: 586px) {
+        .coverPicture {
+        display: none;
+    }
+    
+    #coverPicture2, #nameAbout {
+        display: block;
+    }
+    #goUp, #goUp1, #goUp2, #goUp3 {
+        max-width: 40px;
+        max-height: 40px;
+        transform: rotate(-90deg);
+        bottom: 2%; right: 2%;
+    }
+    #goUp:hover, #goUp1:hover, #goUp2:hover, #goUp3:hover {
+        transform:  rotate(-90deg);
+    }
+    
+    #theShowerP {
+        font-size: 17px;
+    }
+    
+    .posts {
+        font-size: 15px;
+    }
+    .posts:hover, .posts.active {
+        padding-left: 0; padding-right: 0;
+        text-align: center;
+    }
+    
+    #forGenInt, #forHobbiesIntro, #aboutNavigation ul li, .forStudy, .branchSci, .linguisticClick {
+        font-size: 15px;
+    }
+    
+    .postsContent, .divAbout, #forHobbies {
+        font-size: 14px;
+    }
+    
+    #aboutDeveloper {
+        font-size: 14px;
+    }
+    
+    .classAbout {
+        text-align: center;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background-color: #141414;
+    }
+    .ifCp {
+        display: block;
+    }
+
+    #downNavigation p {
+        margin: 0;
+        font-size: 13px;
+        display:  block;
+        border-left: 1px solid #be5000; border-right: 1px solid #692c00;
+        padding: 7px;
+        box-shadow: none;
+    }
+    #first {
+        border-top: 1px solid #be5000;
+    }
+    #last {
+        border-bottom: 1px solid #692c00;
+    }
+    
+    .photosCaps {
+        font-size: 15px;
+    }
+
+    .modal-content {
+        width: 300px;
+    }
+    
+    #caption {
+        width: 50%;
+    }
+    
+    abbr {
+        display: none;
+    }
+    .abbr {
+        display: inline;
+    }
+
+    .forHobbiesTtle {
+        max-width: 90%;
+    }
+    
+    .hobbiesExp {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .photos {
+        max-width: 19%;
+    }
+}
+
+/* Media Queries for About Ends */
+
+/* ABOUT DIVISION OF CSS ENDS*/
+
+/* SKILLS DIVISION OF CSS BEGINS*/
+#skills {
+    background-color:#1a1a1a;
+    height: auto;
+    width: 100%;
+}
+
+#mySkills, #myContact, #aboutDeveloper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color: #ccc;
+    padding: 5px;
+    background-color: #404040;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px #101010;
+}
+
+/* General Usage of Skills Section Starts */
+
+#technologicalSkills p::selection, #languageSkills p::selection, #scientificSkills p::selection {
+    color: rgb(34, 38, 41);
+}
+
+#technologicalSkills, #languageSkills, #scientificSkills {
+    width: 80%;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 5%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#tsShowerNav, #lsShowerNav, #ssShowerNav {
+    width: 80%;
+    display: none;
+    padding: 5px; 
+    margin-top: 5px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tsShowerNav ul li, #lsShowerNav ul li, #ssShowerNav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    overflow-y: hidden;
+    box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#tsShowerNav ul li:hover, #lsShowerNav ul li:hover, #ssShowerNav ul li:hover {
+    color: #333333;
+    background-color: #fff; 
+    text-shadow: 1px 1px orange, 1px 1px red;
+}
+
+.showCon.show {
+    display: block !important;
+} 
+
+#tsShowerCon, #lsShowerCon, #ssShowerCon {
+    width: 100%;
+    height: 20%; 
+    top: 0;
+}
+
+#tsShower, #lsShower, #ssShower {
+    color: #e68a00;
+    background-color: #404040;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.50em;
+    border-bottom: 1px solid #000;
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+}
+
+#tsForHTML, #tsForCSS, #tsForJs, #tsForHardware, #tsForNet, #tsForOthers, #tagalog, #visaya, #english, #others, #physicsSS, #biologySS, #microbiologySS, #othersSS {
+    color: #fff;
+    height: 50%;
+    width: 100%;
+    background-color: #303333;
+    margin: 0 auto; 
+}
+
+#tsShowerNav a, #lsShowerNav a, #ssShowerNav a {
+    color: #ff4f19;
+    text-decoration: none;
+}
+
+.divForGens {
+    margin: 0 auto;
+    width: 100%;
+    height: 50%;
+    color: #ccf;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border: 1px solid #5d5d5d;
+    border-top: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divForGensTtle {
+    color: #ff5800;
+    text-align: center;
+    text-shadow: 1px 1px red;
+    font-size: 1.50em;
+}
+
+.whatIs  {
+    color: #b1b1b1;
+    text-align: initial;
+    font-size: 1.50em;
+    font-family: monospace;
+    padding: 5px;
+    padding-top: none;
+}
+
+.different {
+    text-align: center;
+}
+/* General Usage of Skills Section Ends*/
+
+/* For Skills/Technological Skills Section */
+.tech {
+    color: #00ff0a;
+}
+
+#technologicalSkills.active {
+    text-shadow: 9px 9px #000;
+    box-shadow: none;
+}
+
+#tsShowerNav a:hover {
+    color: #ff000a;
+    transition: 0.5s;
+}
+
+#technologicalSkills {
+    background-color: red;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.9), 0 6px 20px 0 rgba(255, 0, 0, 0.7);
+}
+
+#technologicalSkills:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 31, 31, 0.61), 0 6px 20px 0 rgba(255, 35, 35, 0.75);
+}
+
+#technologicalSkills:hover p {
+    text-shadow: 1px 1px #ff2f2f;
+    color: #500101;
+}
+
+#technologicalSkills.noHover:hover {
+    box-shadow: none;
+}
+
+#technologicalSkills:hover, #technologicalSkills.active {
+    transition: 0.5s;
+    background-color: rgba(180, 0, 0, 0.7);
+    padding-left: 45%;
+    transition: 0.5s;
+}
+
+#tsSkills {
+    font-family: impact;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+#tsShowerNav ul li.active {
+    color: #ff0000;
+    background-color: #262626;
+    text-shadow: 1px 1px #5a0000;
+    border: 1px solid #ff4d4d;
+    box-shadow: 0 4px 8px 0 rgba(255, 27, 27, 0.4), 0 6px 20px 0 rgba(255, 27, 27, 0.4);
+}
+
+#tssCSS, #tssJS, #tssHD, #tssNet, #tssOthers {
+    display: none; 
+}
+
+.introTech {
+    color: #fff;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    background-color: #ff2626;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tInfo {
+    padding: 5px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background-color: #ff2626;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(255, 38, 38, 0.9), 0 6px 20px 0 rgba(255, 38, 38, 0.7);
+}
+
+.tInfo:hover {
+    color: #ff2626;
+    text-shadow: 1px 1px #ff2626;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px #000;
+    transition: 1s;
+    max-width: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(255, 35, 35, 0.59), 0 6px 20px 0 rgba(255, 35, 35, 0.59);
+}
+
+.tInfo.active {
+    color: #fff;
+    transition: 1s;
+    background-color: #ff2626;
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.tInfoHolder {
+    display: none;
+    margin: 0 10px 0 10px;
+    border: 2px solid #ff2626;
+    border-radius: 0 0 15px 15px;
+}
+
+.tInfoHolder.show {
+    display: block;
+}
+
+.tIHContent {
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171515;
+    border-radius: 0 0 13px 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tIHContent a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.tIHContent a:hover {
+    color: #ff2626;
+    transition: 1s;
+}
+
+.takeNote {
+    color: #ffa74f;
+    text-align: initial;
+    font-family: tahoma;
+}
+
+.types {
+    color: #ff8f1f;
+    text-align: initial;
+    font-size: 1.50em;
+    font-family: monospace;
+}
+
+#tsForHTML, #tsForCSS, #tsForJs, #tsForHardware, #tsForNet, #tsForOthers {
+    display: none;
+}
+
+.certificateHolders {
+    width: 80%;
+    margin: 0 auto;
+    max-height: 350px;
+    cursor: pointer;
+    opacity: 0.8; filter: alpha(opacity=80);
+    padding: 5px;
+}
+
+.certificateHolders img:hover {
+    box-shadow: 0 4px 8px 0 rgba(128, 0, 0, 0.9), 0 6px 20px 0 rgba(128, 0, 0, 0.7);
+    opacity: 1; filter: alpha(opacity=100);
+    transition: 0.5s;
+    border: none;
+}
+
+/* For Skills/ Language Skills Section */
+#languageSkills {
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 128, 0, 0.9), 0 6px 20px 0 rgba(0, 128, 0, 0.7);
+}
+
+#languageSkills.active {
+    padding-left: 45%;
+    background-color: rgba(0, 51, 0, 0.7);
+    text-shadow: 9px 9px #000000;
+    box-shadow: none;
+}
+
+#languageSkills:hover {
+    background-color: rgba(0, 51, 0, 0.7);
+    padding-left: 45%;
+    transition: 0.5s;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(29, 255, 0, 0.43), 0 6px 20px 0 rgba(59, 255, 0, 0.39);
+}
+
+#languageSkills:hover p {
+    text-shadow: 1px 1px #47ff2f;
+    color: #005c00;
+}
+
+#lsShowerNav a:hover {
+    color: #1dff00;
+    transition: 0.5s;
+}
+
+#languageSkills.noHover:hover {
+    box-shadow: none;
+}
+
+#lsSkills {
+    font-family: impact;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+.introLang {
+    color: #fff;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+ #tagalog, #visaya, #english, #others {
+    display: none;
+}
+
+#introLangSkills p {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #fff;
+}
+
+.lInfo {
+    padding: 5px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background-color: green;
+    text-align: center;
+    max-width: 50%;
+    margin:  0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 128, 0, 0.9), 0 6px 20px 0 rgba(0, 128, 0, 0.7);
+}
+
+.lInfo:hover {
+    color: green;
+    text-shadow: 1px 1px green;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px #000;
+    transition: 1s;
+    transition: 1s;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(69, 255, 0, 0.59), 0 6px 20px 0 rgba(69, 255, 0, 0.59);
+}
+
+.lInfoHolder {
+    display: none;
+    margin: 0 10px 0 10px;
+    border: 2px solid green;
+    border-radius: 0 0 15px 15px;
+}
+
+.lInfo.active {
+    color: #fff;
+    transition: 1s;
+    background-color: green;
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+}
+
+.lInfoHolder.show {
+    display: block;
+}
+
+#lsShowerNav ul li.active {
+    color: #00ff0a;
+    background-color: #262626;
+    text-shadow: 2px 2px #002a03;
+    border: 1px solid #3dff3d;
+    box-shadow: 0 4px 8px 0 rgba(58, 255, 41, 0.4), 0 6px 20px 0 rgba(58, 255, 41, 0.4);
+}
+
+.lIHContent {
+    padding: 10px;
+    color: #fff;
+    background-color: #171515;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.dia {
+    color: #00ff0a;
+    font-size: 1.25em;
+    margin: 3px;
+    width: 98%;
+    padding: 5px;
+    background-color: #191919;
+    margin: 0 auto;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* For Skills/Scientific Skills Section */
+#scientificSkills {
+    background-color: blue;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 255, 0.9), 0 6px 20px 0 rgba(0, 0, 255, 0.7);
+}
+
+#scientificSkills.active {
+    transition: 0.5s;
+    padding-left: 45%;
+    background-color: rgba(5, 0, 119, 0.7);
+    text-shadow: 9px 9px #000;
+    box-shadow: none;
+}
+
+#scientificSkills:hover {
+    background-color: rgba(5, 0, 119, 0.7);
+    padding-left: 45%;
+    transition: 0.5s;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(31, 100, 255, 0.67), 0 6px 20px 0 rgba(18, 91, 255, 0.79);
+}
+
+#scientificSkills:hover p {
+    color: #05003e;
+    text-shadow: 1px 1px #2f47ff;
+}
+
+#scientificSkills.noHover:hover {
+    box-shadow: none;
+}
+
+#ssShowerNav ul li.active {
+    color: rgb(0, 147, 255);
+    background-color: #262626;
+    text-shadow: 1px 1px #00045c;
+    border: 1px solid #00b5ff;
+    box-shadow:  0 4px 8px 0 rgba(0, 174, 255, 0.4), 0 6px 20px 0 rgba(0, 174, 255, 0.4);
+}
+
+#ssSkills {
+    font-family: impact;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+#ssShowerNav {
+    margin-bottom: 3%;
+}
+
+#physicsSS, #biologySS, #microbiologySS, #othersSS {
+    display: none;
+}
+
+.sIntro {
+    color: #fff;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    background-color: #2626ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sInfo {
+    padding: 5px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background-color: #2626ff;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 10px 0  10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(38, 38, 255, 0.9), 0 6px 20px 0 rgba(38, 38, 255, 0.7);
+}
+
+.sInfo:hover {
+    color: #2626ff;
+    text-shadow: 1px 1px #2626ff;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px #000;
+    transition: 1s;
+    transition: 1s;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(35, 35, 255, 0.59), 0 6px 20px 0 rgba(35, 35, 255, 0.59);
+}
+
+.sInfo.active {
+    color: #fff;
+    transition: 1s;
+    background-color: #2626ff;
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.sInfoHolder {
+    display: none;
+    margin: 0 10px 0 10px;
+    border: 2px solid #2626ff;
+    border-radius: 0 0 15px 15px;
+}
+
+.sInfoHolder.show {
+    display: block;
+}
+
+.sIHContent {
+    padding: 10px;
+    color: #fff;
+    background-color: #171515;
+    border-radius: 0 0 13px 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* For Others General Skills Section Starts  */
+
+.sIHContentOthers, .lIHContentOthers, .tIHContentOthers {
+    color: #fff;
+    background-color: #222121;
+    border-radius: 0 0 13px 13px;
+    padding: 10px;
+}
+
+.sIHCOCon, .lIHCOCon, .tIHCOCon {
+    border-radius: 5px;
+    background-color: #171514;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    border-top: 1px solid #ef4900; border-left: 1px solid #ef4900; 
+    border-bottom: 1px solid #4b1f00; border-right: 1px solid #4b1f00;
+}
+
+.sIHConCat, .lIHConCat, .tIHConCat {
+    text-align: initial;
+    font-size: 1.50em;
+    color: #ff3100;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+#ssShowerNav a:hover {
+    color: #0080ff;
+    transition: 0.5s;
+}
+/* For Others General Skills Section Ends*/
+
+/* Media Queries for Skills starts! */
+
+@media screen and (max-width: 1067px) {
+    
+    #technologicalSkills:hover, #technologicalSkills.active, #languageSkills:hover, #languageSkills.active, #scientificSkills:hover, #scientificSkills.active {
+        padding-left: 5%;
+    }
+    
+    #technologicalSkills, #tsShowerNav, #languageSkills, #lsShowerNav, #scientificSkills, #ssShowerNav {
+        width: 95%;
+        height: 30%; 
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    #technologicalSkills, #languageSkills, #scientificSkills {
+        height: 15%;
+    }
+    
+    #tsSkills, #lsSkills, #ssSkills {
+        font-size: 1.75em;
+    }
+}
+
+/* For phones  */
+@media screen and (max-width: 586px) {
+    #technologicalSkills, #languageSkills, #scientificSkills {
+        width: 95%;
+        padding: 13%;
+        margin-top: 5%; margin-bottom: 5%;
+    }
+    
+    #technologicalSkills:hover, #technologicalSkills.active {
+        padding-left: 0; padding-right: 0;
+        text-shadow: 0px 10px #000;
+    }
+    
+    #languageSkills:hover, #languageSkills.active {
+        padding-left: 0; padding-right: 0;
+        text-shadow: 0px 10px #000;
+    }
+    
+    #scientificSkills:hover, #scientificSkills.active {
+        padding-left: 0; padding-right: 0;
+        text-shadow: 0px 10px #000;
+    }
+    
+    #tsShowerNav, #lsShowerNav, #ssShowerNav {
+        width: 95%;
+    }
+    
+    #tsSkills, #lsSkills, #ssSkills {
+        padding-left: 0; padding-right: 0;
+        font-size: 22px;
+    }
+
+    #tsShowerNav ul, #lsShowerNav ul, #ssShowerNav ul  {
+        text-align: center;
+    }
+    
+    #tsShowerNav ul li, #lsShowerNav ul li, #ssShowerNav ul li {
+        font-size: 13px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #tssShower, #lssShower, #showerSS {
+        font-size: 16px;
+    }
+    
+    .divForGens {
+        font-size: 14px;
+    }
+    
+    .introTech, .tInfo, .tIHContent, .tIHContentOthers {
+        font-size: 14px;
+    }
+    .introTech {
+        text-align: center;
+    }
+    
+    .introLang, .lInfo, .lIHContent, .lIHContentOthers {
+        font-size: 14px;
+    }
+    .introLang {
+        text-align: center;
+    }
+    
+    .sIntro, .sInfo, .sIHContent, .sIHContentOthers {
+        font-size: 14px;
+    }
+    .sIntro {
+        text-align: center;
+    }
+    
+    .whatIs {
+        font-size: 16px;
+    }
+}
+
+/* Media Queries for Skills Ends */
+
+/* SKILLS DIVISION OF CSS ENDS */
+
+/* CONTACT DIVISION OF CSS BEGINS*/
+
+#contact {
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 100%;
+}
+
+#contactPic  {
+    background-image: url(linesWithColors3.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#imageCon {
+    float: left;
+    display: inline;
+    margin: 0 0 0 3%;
+}
+
+#imageCon img {
+    border: 2px solid #ff3b00;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #333333;
+    max-width: 110px;
+}
+
+#contactSection {
+    width: 80%;
+    height: 100%;
+    color: #ff4545;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#contactName {
+    text-align: left;
+    color: #ccc;
+    background-color: rgba(31, 31, 31, 0.7);
+    border-radius: 15px 15px 0 0;
+    font-size: 1.75em;
+    font-family: monospace;
+    border-bottom: 1px solid #000;
+    padding-top: 3%;
+}
+
+#conMessage {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.25em;
+    font-family: sans-serif;
+}
+
+#conFbP, #conSlP, #conGP {
+    color: green;
+    padding: 5px;
+}
+
+#conFbP a:hover, #conSlP a:hover, #conGP a:hover {
+    border-bottom: 1px solid #1cf400;
+    transition: 0.3s;
+    color: #2bb900; 
+}
+
+#conChoices {
+    background: #161916;
+    max-height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#conChoices:hover {
+    background: #151515;
+    transition: 0.5s;
+}
+
+#conGP a, #conSlP a, #conFbP a  {
+    color: #033400;
+    text-decoration: none;
+}
+ 
+/* Media Queries for Contact starts! */
+
+@media screen and (max-width: 1067px) {
+    #contactSection {
+        width: 90%;
+    }
+}
+
+/*  for phones or tablets  */
+@media screen and (max-width: 586px) {
+        #contact {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #myContact, #aboutDeveloper, #mySkills, #upNavMenu {
+        font-size: 17px;
+    }
+    
+    #conChoices {
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 13%;
+        border-radius: 5px;
+    }
+    #conChoices:hover {
+        background-color: #161916;
+        box-shadow: none;
+    }
+    
+    #conFbP, #conSlP, #conGP {
+        font-size: 15px;
+    }
+    
+    #conGP a, #conSlP a, #conFbP a {
+        padding: 5px;
+        border-radius: 5px;
+        color: #41d300;
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    #conGP a:hover, #conSlP a:hover, #conFbP a:hover {
+        color: #237400;
+        border-bottom: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.0);
+        background: #0c0c0c;
+    }
+    
+    #contactPic {
+        background-image: url(linesWithColors2.png)
+    }
+    
+    #imageCon {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    #contactSection {
+        width: 90%;
+        background-color: rgba(31, 34, 36, 0.83);
+    }
+    
+    #contactSection img {
+        margin: 0;
+        width: 25%;
+        height: 35%;
+        border: 1px solid red;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
+    #contactName {
+        font-size: 20px;
+        margin-top: 5%;
+        text-align: center;
+        display: block;
+        color: #ff3100;
+        border-bottom: 1px solid #ccc;
+        padding-top: 0;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    
+    #conMessage {
+        font-size: 14px;
+        text-align: center;
+        color: #ccc;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid #e34600;
+        max-width: 87%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Queries for Contact Ends */
+
+/* CONTACT DIVISION OF CSS ENDS */

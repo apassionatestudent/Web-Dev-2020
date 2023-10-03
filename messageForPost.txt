@@ -1,0 +1,39 @@
+Hi there! Finally it's done. I'm sharing about my simple mere project to all of you. Please rate it from 1 - 10. I'm sorry if you don't like the design, I'm not
+really good at designing but I'm willing to improve my designing skills. If you have something for me like advices, code criticisms, design remarks, etc. I'd like 
+to hear those things to better improve myself as a beginner at this field. If you have any questions kindly put it to the comment section, I'll probably answer it.
+
+Plans for improvements:
+For now it will just be a static website due to this crap pandemic, because my second-hand computer doesn't have an internet access which is needed to gather 
+the necessary things I need. I'm not allowed to go to internet cafes to gather the things I need since my computer doesn't have an internet access and those things 
+are closed at this pandemic. I'd like to improve it eventually if God willing, like putting a database, having an administrator's section that's capable of creating,
+updating and deleting contents, upload/delete posts like the ones at Facebook at the About/General Section but it won't have a comment and share sections. I'm not
+saying that I'm very capable of doing so, but I'm willing to take up this challenge to better test my skills and improve them :). If I successfully do so, I'd like to
+share an another copy for those who want to have it for studying or for whatever reason may be.
+
+This project is delayed due to some reasons: 
+This project started on October 24, 2019. Since it started at October 2019, it's under the 2nd semester of Grade 11. So therefore, there's a lot of projects 
+to deal with from minor subjects with some literally deadly deadlines for my grades. I had two subjects for research, I needed to create a video, and so on. 
+There are literally many projects which I needed to comply if I wanted to pass Grade 11. This fact hindered me to continue the project and to study more about 
+technology. Furthermore, household chores are natutally time killers.
+
+At February 2020, my computer became faulty. I initially thought that it was just the CMOS since the monitor worked but the system unit didn't.
+So I replaced it with a new one but it didn't still worked. It perplexed me somehow thinking about what's the problem. Then I finally figured 
+out that it was the power supply's fault!. It's replaced with a new one at April 2020.
+
+It works! But due to an space issue(its former placement was blocked by a storage box), so I didn't set up the computer and it was just on the other
+side. On May 8, 2020, the box was removed and I finally set up computer into it. The computer is set up and I continued finishing this at early June.
+
+
+It took quite long due to planning(this is from scratch), designing(though it's not very creative) and resolving bugs when it's apparent(especially on JavaScript).
+Besides, it's really hard to come up what words and paragraphs should I put on, it's just basically like writing a poem. I also double check if the grammar is 
+correct because sometimes I forgot it and write ingrammatical paragraphs unintentionally. If you spot a grammatical error, please inform me. I was not allowed to use 
+the computer at night until this early July wherein I found a new extension wire which I can use it until night. My sister and I shared the same extension wire 
+before and she'll use it at night to watch Korean movies, so she won't let me use the extension wire to operate the computer. I didn't started coding at early morning
+because I woke up at 10 am to 11 am which I only started at noon and I usually stopped at 5pm to 6pm. Those hours are time of studying and coding at the same time.
+Only in early July seems good to continue with full thrust.
+
+I've started studying about technology since February 2019(Grade 10, 16 years old) and before that, I really had no idea about it especially at programming. I don't 
+put a lot of time in studying on School days due to a lot of minor subjects which is not related to I.T. I'm encouraging beginners like me to strive hard studying, 
+improving and testing the skills that we have to better improve and prepare ourselves for the industry ahead. I'm willing to learn more as I percieve the broadness 
+and complexity of modern technology. I'm also willing to share knowledge and collaborate to those passionate students who are willing to improve themselves at this 
+field.  
